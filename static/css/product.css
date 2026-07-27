@@ -15,7 +15,7 @@ body {
     background: var(--brochure-bg);
 }
 
-.site-header--product {
+.site-header--product.site-header--solid {
     background: rgba(255, 255, 255, 0.92);
     border-bottom: 1px solid rgba(19, 32, 43, 0.08);
     backdrop-filter: blur(14px);

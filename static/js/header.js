@@ -3,13 +3,10 @@
     var lastScrollY = window.scrollY;
     var hideTimer = null;
     var autoHideDelay = 5000;
-    var keepVisible = false;
 
     if (!header) {
         return;
     }
-
-    keepVisible = header.classList.contains("site-header--product");
 
     function clearHideTimer() {
         if (hideTimer !== null) {
@@ -36,13 +33,6 @@
         var currentScrollY = window.scrollY;
 
         clearHideTimer();
-
-        if (keepVisible) {
-            header.classList.add("site-header--solid");
-            header.classList.remove("site-header--hidden");
-            lastScrollY = currentScrollY;
-            return;
-        }
 
         if (currentScrollY <= 0) {
             header.classList.remove("site-header--solid");

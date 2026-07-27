@@ -1,7 +1,7 @@
 {% load static %}
 {% url 'home' as home_url %}
 {% url 'product' as product_url %}
-<header class="site-header{% if request.path == product_url %} site-header--product site-header--solid{% endif %}" id="siteHeader">
+<header class="site-header{% if request.path == product_url %} site-header--product{% endif %}" id="siteHeader">
     <div class="site-header__inner">
         <a class="site-header__logo" href="{{ home_url }}" aria-label="Fortrix Robotics Home">
             <img
@@ -12,20 +12,11 @@
         </a>
 
         <nav class="site-header__nav" aria-label="Primary">
-            {% if request.path == product_url %}
-            <a class="site-header__item" href="#product-profile">Robosweeper P1</a>
-            <a class="site-header__item" href="#product-advantages">核心竞争力</a>
-            <a class="site-header__item" href="#product-scenes">应用场景</a>
-            <a class="site-header__item" href="#product-specs">技术参数</a>
-            <a class="site-header__item" href="#product-technology">核心技术</a>
-            {% else %}
             <a class="site-header__item" href="{{ product_url }}">产品介绍</a>
-            <a class="site-header__item" href="{{ home_url }}#technology">一脑多体架构</a>
-            <a class="site-header__item" href="{{ home_url }}#about">产品矩阵</a>
-            <a class="site-header__item" href="{{ product_url }}#product-scenes">应用场景</a>
-            <a class="site-header__item" href="{{ product_url }}#contact">联系我们</a>
-            {% endif %}
+            <span class="site-header__item site-header__item--static">一脑多体架构</span>
+            <span class="site-header__item site-header__item--static">产品矩阵</span>
+            <span class="site-header__item site-header__item--static">应用场景</span>
+            <span class="site-header__item site-header__item--static">联系我们</span>
         </nav>
     </div>
 </header>
-
