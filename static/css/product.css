@@ -627,31 +627,29 @@ body {
     min-height: 210px;
     overflow: hidden;
     border-radius: 28px;
-    background:
-        linear-gradient(180deg, rgba(29, 90, 122, 0.06), rgba(10, 86, 74, 0.1)),
-        linear-gradient(135deg, #b7cad8 0%, #7ea5b5 45%, #dce6e8 100%);
+    background: #dfe7eb;
+}
+
+.scene-tile__image {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .scene-tile::before {
     content: "";
     position: absolute;
-    inset: 14px 14px 46px;
-    border-radius: 22px;
+    inset: 0;
     background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0)),
-        linear-gradient(135deg, #8ea7c3 0%, #6b879e 35%, #4e6b59 100%);
+        linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(12, 24, 30, 0.06) 46%, rgba(12, 24, 30, 0.34) 100%);
 }
 
 .scene-tile::after {
-    content: "";
-    position: absolute;
-    right: -10px;
-    bottom: -12px;
-    width: 72%;
-    height: 42%;
-    border-radius: 50%;
-    background: rgba(60, 150, 104, 0.22);
-    filter: blur(12px);
+    display: none;
 }
 
 .scene-tile span {
@@ -660,53 +658,11 @@ body {
     right: 0;
     bottom: 0;
     padding: 14px 16px 12px;
-    background: var(--brochure-accent);
+    background: linear-gradient(180deg, rgba(24, 183, 179, 0), rgba(24, 183, 179, 0.94));
     color: var(--brochure-white);
     font-size: 18px;
     text-align: center;
-}
-
-.scene-tile--dense::before {
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0)),
-        linear-gradient(135deg, #8798ae 0%, #5c6678 36%, #8d9196 100%);
-}
-
-.scene-tile--aerial::before {
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0)),
-        linear-gradient(135deg, #9bb0bb 0%, #8c9d8e 36%, #7f6d52 100%);
-}
-
-.scene-tile--park::before,
-.scene-tile--lawn::before {
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0)),
-        linear-gradient(135deg, #90b9c5 0%, #6f9eaa 28%, #5f865d 100%);
-}
-
-.scene-tile--industrial::before {
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0)),
-        linear-gradient(135deg, #a7b8c1 0%, #7b8082 34%, #b8c3ca 100%);
-}
-
-.scene-tile--logistics::before {
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0)),
-        linear-gradient(135deg, #a0b1b6 0%, #6b6f75 42%, #d4ccc2 100%);
-}
-
-.scene-tile--campus::before {
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0)),
-        linear-gradient(135deg, #b7c2ca 0%, #8fa1a9 38%, #cabcae 100%);
-}
-
-.scene-tile--plaza::before {
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0)),
-        linear-gradient(135deg, #aab8c3 0%, #adbfc7 34%, #dcddd8 100%);
+    z-index: 1;
 }
 
 .scene-notes {

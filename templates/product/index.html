@@ -4,11 +4,11 @@
 {% block title %}Fortrix Robotics | Robosweeper P1{% endblock %}
 
 {% block page_css %}
-<link rel="stylesheet" href="{% static 'css/product.css' %}?v=20260727-product-p1-16">
+<link rel="stylesheet" href="{% static 'css/product.css' %}">
 {% endblock %}
 
 {% block page_js %}
-<script src="{% static 'js/product.js' %}?v=20260727-product-snap-2"></script>
+<script src="{% static 'js/product.js' %}"></script>
 {% endblock %}
 
 {% block content %}
@@ -148,19 +148,82 @@
             <div class="scenes-layout">
                 <div class="scene-mosaic">
                     <div class="scene-column">
-                        <div class="scene-tile"><span>主干道</span></div>
-                        <div class="scene-tile scene-tile--dense"><span>辅路</span></div>
-                        <div class="scene-tile scene-tile--aerial"><span>城中村</span></div>
+                        <div class="scene-tile">
+                            <img
+                                class="scene-tile__image"
+                                src="{% static 'images/product/scenes/main_road.png' %}"
+                                alt="主干道场景"
+                            >
+                            <span>主干道</span>
+                        </div>
+                        <div class="scene-tile scene-tile--dense">
+                            <img
+                                class="scene-tile__image"
+                                src="{% static 'images/product/scenes/side_road.png' %}"
+                                alt="辅路场景"
+                            >
+                            <span>辅路</span>
+                        </div>
+                        <div class="scene-tile scene-tile--aerial">
+                            <img
+                                class="scene-tile__image"
+                                src="{% static 'images/product/scenes/urban_village.png' %}"
+                                alt="城中村场景"
+                            >
+                            <span>城中村</span>
+                        </div>
                     </div>
                     <div class="scene-column">
-                        <div class="scene-tile scene-tile--park"><span>人行道</span></div>
-                        <div class="scene-tile scene-tile--industrial"><span>园区 / 厂区</span></div>
-                        <div class="scene-tile scene-tile--logistics"><span>物流园</span></div>
+                        <div class="scene-tile scene-tile--park">
+                            <img
+                                class="scene-tile__image"
+                                src="{% static 'images/product/scenes/footpath.png' %}"
+                                alt="人行道场景"
+                            >
+                            <span>人行道</span>
+                        </div>
+                        <div class="scene-tile scene-tile--industrial">
+                            <img
+                                class="scene-tile__image"
+                                src="{% static 'images/product/scenes/campus.png' %}"
+                                alt="园区厂区场景"
+                            >
+                            <span>园区 / 厂区</span>
+                        </div>
+                        <div class="scene-tile scene-tile--logistics">
+                            <img
+                                class="scene-tile__image"
+                                src="{% static 'images/product/scenes/distribution_center.png' %}"
+                                alt="物流园场景"
+                            >
+                            <span>物流园</span>
+                        </div>
                     </div>
                     <div class="scene-column">
-                        <div class="scene-tile scene-tile--lawn"><span>公园</span></div>
-                        <div class="scene-tile scene-tile--campus"><span>学校</span></div>
-                        <div class="scene-tile scene-tile--plaza"><span>广场</span></div>
+                        <div class="scene-tile scene-tile--lawn">
+                            <img
+                                class="scene-tile__image"
+                                src="{% static 'images/product/scenes/park.png' %}"
+                                alt="公园场景"
+                            >
+                            <span>公园</span>
+                        </div>
+                        <div class="scene-tile scene-tile--campus">
+                            <img
+                                class="scene-tile__image"
+                                src="{% static 'images/product/scenes/school.png' %}"
+                                alt="学校场景"
+                            >
+                            <span>学校</span>
+                        </div>
+                        <div class="scene-tile scene-tile--plaza">
+                            <img
+                                class="scene-tile__image"
+                                src="{% static 'images/product/scenes/square.png' %}"
+                                alt="广场场景"
+                            >
+                            <span>广场</span>
+                        </div>
                     </div>
                 </div>
 
@@ -304,4 +367,3 @@
     </section>
 </div>
 {% endblock %}
-
