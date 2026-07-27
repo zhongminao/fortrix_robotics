@@ -263,104 +263,66 @@
     <section class="brochure-section" id="product-specs">
         <div class="brochure-shell">
             <div class="brochure-section__header">
-                <span>技术参数</span>
+                <span>核心技术与产品参数</span>
                 <span>Fortrix Robotics</span>
             </div>
             <div class="brochure-section__rule"></div>
 
-            <div class="spec-layout">
-                <table class="spec-table">
-                    <tbody>
-                        <tr class="spec-table__section"><th>尺寸</th><th></th></tr>
-                        <tr><td>总长(不含扫盘)(mm)</td><td>1673</td></tr>
-                        <tr><td>总宽(不含扫盘)(mm)</td><td>890</td></tr>
-                        <tr><td>总高(不含传感器)(mm)</td><td>1360</td></tr>
-                        <tr><td>轴距(mm)</td><td>800</td></tr>
-                        <tr><td>轮中心距(mm)</td><td>889</td></tr>
-                        <tr><td>最小转弯半径(外廓)(mm)</td><td>907</td></tr>
-                        <tr><td>前轮转角范围(度)</td><td>±60</td></tr>
-                        <tr><td>轮胎规格(mm)</td><td>--</td></tr>
-                        <tr class="spec-table__section"><th>质量</th><th></th></tr>
-                        <tr><td>最大总质量</td><td>--</td></tr>
-                        <tr><td>底盘质量</td><td>--</td></tr>
-                        <tr class="spec-table__section"><th>性能</th><th></th></tr>
-                        <tr><td>水箱容积(L)</td><td>--</td></tr>
-                        <tr><td>垃圾箱容积(L)</td><td>--</td></tr>
-                        <tr><td>清扫宽度(mm)</td><td>1300</td></tr>
-                    </tbody>
-                </table>
-
-                <table class="spec-table">
-                    <tbody>
-                        <tr><td>作业速度(km/h)</td><td>6~8</td></tr>
-                        <tr><td>清扫效率(m²/h)</td><td>最高 16000</td></tr>
-                        <tr><td>人机清扫效率比</td><td>10:1</td></tr>
-                        <tr class="spec-table__section"><th>电气</th><th></th></tr>
-                        <tr><td>电量(kWh)</td><td>--</td></tr>
-                        <tr><td>电压(V)</td><td>--</td></tr>
-                        <tr><td>驱动电机功率(kW)</td><td>--</td></tr>
-                        <tr><td>驱动电机转速(rpm)</td><td>--</td></tr>
-                        <tr><td>离心风机功率(W)</td><td>--</td></tr>
-                        <tr class="spec-table__section"><th>自动驾驶配置</th><th></th></tr>
-                        <tr><td>场景</td><td>厂区 / 园区等半封闭场景，无交通灯，无高速运动物体</td></tr>
-                        <tr><td>激光雷达</td><td>3 个</td></tr>
-                        <tr><td>摄像头</td><td>5 个</td></tr>
-                        <tr><td>定位精度</td><td>≤5cm</td></tr>
-                        <tr><td>单次充电作业面积</td><td>--</td></tr>
-                    </tbody>
-                </table>
+            <div class="capability-grid">
+                <article class="technology-card capability-card">
+                    <h2>360° 无死角多重感知融合</h2>
+                    <p>融合激光雷达、摄像头，实现全天候多维度感知。检测精度高达 99%，轮廓误差 &lt; 5cm，速度感知延迟 &lt; 10 毫秒，构建敏锐“感官”。</p>
+                </article>
+                <article class="technology-card capability-card">
+                    <h2>厘米级多源融合精准定位</h2>
+                    <p>采用多源融合定位技术，实现误差 &lt; 2cm 的实时定位。即使在隧道、高楼峡谷等 GPS 信号丢失场景，仍能保持稳定、精确的自主定位能力。</p>
+                </article>
+                <article class="technology-card capability-card">
+                    <h2>海量数据训练的智慧决策</h2>
+                    <p>依托全球 30+ 城市、2200+ 天运营经验训练深度学习模型。从容应对城中村、早晚高峰拥堵等复杂场景，让无人作业的“大脑”更聪明、更可靠。</p>
+                </article>
+                <article class="technology-card capability-card">
+                    <h2>双模远程控制的安全防线</h2>
+                    <p>远程控制中心可发送决策建议辅助车辆，极端情况可实现安全员完全接管，构建“建议 + 接管”双模机制，为无人作业提供 100% 的安全兜底保障。</p>
+                </article>
             </div>
 
-            <p class="spec-note">
-                备注：环卫保洁人员清扫效率日均 6000-7000m²，时均 1200-1400m²。
-                规格和细节以最终销售合同为准，以上信息仅供参考。
-            </p>
-        </div>
-    </section>
-
-    <section class="brochure-section" id="product-technology">
-        <div class="brochure-shell">
-            <div class="brochure-section__header">
-                <span>核心技术</span>
-                <span>Fortrix Robotics</span>
-            </div>
-            <div class="brochure-section__rule"></div>
-
-            <p class="technology-intro">
-                Robosweeper P1 的卓越性能，源于矩略科技领先的自动驾驶技术积累，
-                通过感知、定位、决策与远程控制的全链路技术闭环，实现无人作业的高效与安全。
-            </p>
-
-            <div class="technology-layout">
-                <div class="technology-visual">
-                    <div class="render-card render-card--tech">
-                        <div class="product-photo product-photo--tech">
-                            <img
-                                class="product-photo__image product-photo__image--tech"
-                                src="{% static 'images/product/machine_three_view.png' %}"
-                                alt="Robosweeper P1 三视图"
-                            >
-                        </div>
-                    </div>
+            <div class="capability-showcase">
+                <div class="capability-parameters">
+                    <h2 class="capability-parameters__title">产品参数</h2>
+                    <ul class="capability-parameters__list">
+                        <li><span>整机尺寸</span><strong>1673 × 890 × 1360 mm</strong></li>
+                        <li><span>轴距</span><strong>800 mm</strong></li>
+                        <li><span>轮中心距</span><strong>889 mm</strong></li>
+                        <li><span>最小转弯半径</span><strong>907 mm</strong></li>
+                        <li><span>前轮转角范围</span><strong>±60°</strong></li>
+                        <li><span>清扫宽度</span><strong>1300 mm</strong></li>
+                        <li><span>作业速度</span><strong>6~8 km/h</strong></li>
+                        <li><span>清扫效率</span><strong>最高 16000 m²/h</strong></li>
+                        <li><span>人机清扫效率比</span><strong>10:1</strong></li>
+                        <li><span>激光雷达</span><strong>3 个</strong></li>
+                        <li><span>摄像头</span><strong>5 个</strong></li>
+                        <li><span>定位精度</span><strong>≤5cm</strong></li>
+                    </ul>
+                    <p class="capability-parameters__note">
+                        适用场景：厂区 / 园区等半封闭场景，无交通灯，无高速运动物体。
+                        规格和细节以最终销售合同为准，以上信息仅供参考。
+                    </p>
                 </div>
 
-                <div class="technology-grid">
-                    <article class="technology-card">
-                        <h2>360° 无死角多重感知融合</h2>
-                        <p>融合激光雷达、摄像头，实现全天候多维度感知。检测精度高达 99%，轮廓误差 &lt; 5cm，速度感知延迟 &lt; 10 毫秒，构建敏锐“感官”。</p>
-                    </article>
-                    <article class="technology-card">
-                        <h2>厘米级多源融合精准定位</h2>
-                        <p>采用多源融合定位技术，实现误差 &lt; 2cm 的实时定位。即使在隧道、高楼峡谷等 GPS 信号丢失场景，仍能保持稳定、精确的自主定位能力。</p>
-                    </article>
-                    <article class="technology-card">
-                        <h2>海量数据训练的智慧决策</h2>
-                        <p>依托全球 30+ 城市、2200+ 天运营经验训练深度学习模型。从容应对城中村、早晚高峰拥堵等复杂场景，让无人作业的“大脑”更聪明、更可靠。</p>
-                    </article>
-                    <article class="technology-card">
-                        <h2>双模远程控制的安全防线</h2>
-                        <p>远程控制中心可发送决策建议辅助车辆，极端情况可实现安全员完全接管，构建“建议 + 接管”双模机制，为无人作业提供 100% 的安全兜底保障。</p>
-                    </article>
+                <div class="capability-visual">
+                    <div class="render-card render-card--capability">
+                        <div class="capability-stage">
+                            <div class="capability-stage__glow"></div>
+                            <div class="product-photo product-photo--capability">
+                                <img
+                                    class="product-photo__image product-photo__image--capability"
+                                    src="{% static 'images/product/machine_main.png' %}"
+                                    alt="Robosweeper P1 产品主图"
+                                >
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
