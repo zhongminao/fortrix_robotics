@@ -1,0 +1,33 @@
+:root {
+    --header-height: 60px;
+    --header-bg: rgba(35, 47, 57, 0.9);
+    --header-text: #ffffff;
+    --header-accent: #4fc3ff;
+    --page-bg: #f4f7fa;
+    --hero-overlay: linear-gradient(135deg, rgba(15, 25, 35, 0.2), rgba(0, 130, 202, 0.38));
+    --body-text: #203040;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: var(--body-text);
+    background: var(--page-bg);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-shell {
+    min-height: 100vh;
+}

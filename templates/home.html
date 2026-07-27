@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Fortrix Robotics | 首页{% endblock %}
+
+{% block page_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}?v=20260716-home-hero-3">
+{% endblock %}
+
+{% block content %}
+<section class="hero" id="hero">
+    <div class="hero__background" aria-hidden="true"></div>
+    <div class="hero__orb hero__orb--left" aria-hidden="true"></div>
+    <div class="hero__orb hero__orb--right" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+        <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            <span class="hero__badge-text">具身智能时代的机器人创新者</span>
+        </div>
+
+        <h1 class="hero__title">
+            让机器<span class="hero__title-accent hero__title-accent--cyan">理解世界</span><br>
+            让智能<span class="hero__title-accent hero__title-accent--violet">服务产业</span>
+        </h1>
+
+        <p class="hero__text">
+            通过自研“一脑多体”智能架构，
+            <br class="hero__text-break">
+            打造面向工业、城市服务和智能制造的新一代机器人系统。
+        </p>
+
+        <div class="hero__actions">
+            <a class="hero__button hero__button--primary" href="#technology">
+                探索核心产品
+                <span class="hero__button-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="hero__button hero__button--secondary" href="#contact">了解技术架构</a>
+        </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-mouse"></span>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,307 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Fortrix Robotics | Robosweeper P1{% endblock %}
+
+{% block page_css %}
+<link rel="stylesheet" href="{% static 'css/product.css' %}?v=20260727-product-p1-16">
+{% endblock %}
+
+{% block page_js %}
+<script src="{% static 'js/product.js' %}?v=20260727-product-snap-2"></script>
+{% endblock %}
+
+{% block content %}
+<div class="brochure-page">
+    <section class="brochure-section brochure-section--snap" id="product-profile">
+        <div class="brochure-shell">
+            <div class="brochure-section__header">
+                <span>Robosweeper P1</span>
+                <span>Fortrix Robotics</span>
+            </div>
+            <div class="brochure-section__rule"></div>
+
+            <div class="profile-layout">
+                <div class="profile-gallery">
+                    <div class="render-card render-card--hero">
+                        <div class="product-photo product-photo--hero">
+                            <img
+                                class="product-photo__image product-photo__image--hero"
+                                src="{% static 'images/product/machine_main.png' %}"
+                                alt="Robosweeper P1 主视图"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="profile-gallery__row">
+                        <div class="render-card render-card--small">
+                            <div class="product-photo product-photo--small">
+                                <img
+                                    class="product-photo__image product-photo__image--small"
+                                    src="{% static 'images/product/machine_front.png' %}"
+                                    alt="Robosweeper P1 前视图"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="render-card render-card--small">
+                            <div class="product-photo product-photo--small">
+                                <img
+                                    class="product-photo__image product-photo__image--small"
+                                    src="{% static 'images/product/machine_back.png' %}"
+                                    alt="Robosweeper P1 后视图"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-copy">
+                    <h1 class="profile-copy__title">产品介绍</h1>
+                    <p class="profile-copy__text">
+                        矩略科技全无人驾驶扫地机 Robosweeper P1 园区版是基于 L4 级自动驾驶技术打造的全无人化清扫设备，
+                        最高速度 10km/h，搭载高线束激光雷达，集成先进的感知、决策和控制技术，
+                        彻底改变传统环卫作业模式，提供更安全、更高效、更智能的城市清洁解决方案。
+                    </p>
+
+                    <div class="statement-card">
+                        <h2>核心定位：城市空间的 7x24 小时卫士</h2>
+                        <p>
+                            替代并超越传统人工清扫，无需人员值守，可全天候、全时段自主执行清洁任务，
+                            大幅提升城市公共区域的清洁覆盖效率与安全性。
+                        </p>
+                    </div>
+
+                    <div class="statement-card">
+                        <h2>设计理念：全流程自主的“机器人清洁工”</h2>
+                        <p>
+                            融合自动驾驶科技与专业环卫设备，实现清扫、避障、充电、垃圾倾倒全流程闭环，
+                            构建高度自动化的智能清洁生态。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="brochure-section brochure-section--snap" id="product-advantages">
+        <div class="brochure-shell">
+            <div class="brochure-section__header">
+                <span>核心竞争力</span>
+                <span>Fortrix Robotics</span>
+            </div>
+            <div class="brochure-section__rule"></div>
+
+            <div class="advantages-layout">
+                <article class="advantage-card">
+                    <h2>安全且灵活，避免车辆卡死</h2>
+                    <p><strong>多重智能避障防护：</strong>搭载 360° 激光雷达 + 多组防撞传感器，实时识别台阶、路沿、隔离桩、杂物等障碍物，提前减速绕行。</p>
+                    <p><strong>窄路自适应通行：</strong>机身紧凑型设计，极小转弯半径，园区、楼道、窄人行道均可顺畅穿梭，不会卡滞缝隙、拐角。</p>
+                    <p><strong>多重应急防护机制：</strong>遇突发行人、低矮障碍、凹陷坑洞立即停机缓行，杜绝卡死、剐蹭、陷车故障，大幅降低设备运维损耗。</p>
+                </article>
+
+                <div class="advantage-visual">
+                    <div class="machine-stage">
+                        <div class="machine-stage__halo"></div>
+                        <div class="product-photo product-photo--stage">
+                            <img
+                                class="product-photo__image product-photo__image--stage"
+                                src="{% static 'images/product/machine_front.png' %}"
+                                alt="Robosweeper P1 整机展示"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <article class="advantage-card">
+                    <h2>主动追踪垃圾清扫</h2>
+                    <p><strong>AI 垃圾视觉识别：</strong>内置高清视觉模组，可实时识别纸屑、泥沙、落叶、包装袋等各类路面垃圾，自动规划优先清扫路径。</p>
+                    <p><strong>定点强化清扫模式：</strong>检测到局部重垃圾区域时，自动减速、加大风机吸力，往复清扫直至垃圾完全收净。</p>
+                    <p><strong>动态路径自主调整：</strong>不依赖固定预设路线，跟随垃圾分布动态变更作业轨迹，重点脏污区域重点清洁，清扫无遗漏。</p>
+                </article>
+
+                <article class="advantage-card">
+                    <h2>超高清扫率，有效替代人工</h2>
+                    <p><strong>效率革命：</strong>清扫效率最高 16000m²/h，是人工清扫效率的 10 倍以上，大幅提升作业速度。</p>
+                    <p><strong>强大清扫力：</strong>最大清扫宽度达 1.3 米，风机最高转速 6000 转/分钟，对各类垃圾均有高效收集能力。</p>
+                    <p><strong>极致降本：</strong>单台 P1 可有效替代 5 名以上环卫工人，显著降低人力成本与管理难度。</p>
+                </article>
+
+                <article class="advantage-card">
+                    <h2>精准贴边清扫，提升清扫质量</h2>
+                    <p><strong>雷达精准感知：</strong>搭载高精度激光雷达，实时、精准地检测道路边缘位置，为贴边作业提供可靠的环境数据支撑。</p>
+                    <p><strong>紧贴路沿作业：</strong>扫刷可时刻紧贴路沿缝隙作业，彻底解决人工清扫常见的边角垃圾遗漏问题，实现全域覆盖。</p>
+                    <p><strong>标准化清洁质量：</strong>智能化作业流程确保每一寸路面都得到均匀、彻底的清洁，实现环卫作业质量的标准化、一致化。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="brochure-section brochure-section--snap" id="product-scenes">
+        <div class="brochure-shell">
+            <div class="brochure-section__header">
+                <span>应用场景</span>
+                <span>Fortrix Robotics</span>
+            </div>
+            <div class="brochure-section__rule"></div>
+
+            <div class="scenes-layout">
+                <div class="scene-mosaic">
+                    <div class="scene-column">
+                        <div class="scene-tile"><span>主干道</span></div>
+                        <div class="scene-tile scene-tile--dense"><span>辅路</span></div>
+                        <div class="scene-tile scene-tile--aerial"><span>城中村</span></div>
+                    </div>
+                    <div class="scene-column">
+                        <div class="scene-tile scene-tile--park"><span>人行道</span></div>
+                        <div class="scene-tile scene-tile--industrial"><span>园区 / 厂区</span></div>
+                        <div class="scene-tile scene-tile--logistics"><span>物流园</span></div>
+                    </div>
+                    <div class="scene-column">
+                        <div class="scene-tile scene-tile--lawn"><span>公园</span></div>
+                        <div class="scene-tile scene-tile--campus"><span>学校</span></div>
+                        <div class="scene-tile scene-tile--plaza"><span>广场</span></div>
+                    </div>
+                </div>
+
+                <div class="scene-notes">
+                    <article class="scene-note">
+                        <h2>繁华商业地带</h2>
+                        <p>覆盖步行街、购物中心周边及城市广场，精准清理果皮纸屑，保障商业环境整洁美观。</p>
+                    </article>
+                    <article class="scene-note">
+                        <h2>专业产业园区</h2>
+                        <p>针对工业园区、物流园与科技园区，深度清洁散落物与工业粉尘，维护园区生产秩序。</p>
+                    </article>
+                    <article class="scene-note">
+                        <h2>市政道路全域</h2>
+                        <p>适配城市辅道，高效应对非机动车流量大、油污灰尘多的复杂路况。</p>
+                    </article>
+                    <article class="scene-note">
+                        <h2>公共休闲场景</h2>
+                        <p>服务城市公园、旅游景区、校园及体育场馆，有效处理落叶落花，还原自然环境。</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="scene-footnotes">
+                <article class="scene-footnote">
+                    <h3>兼容多材质地面</h3>
+                    <p>完美适配水泥、沥青、不规则石材、水磨石及各类砖面，无惧地面高差与材质变化。</p>
+                </article>
+                <article class="scene-footnote">
+                    <h3>全品类垃圾通吃</h3>
+                    <p>高效收纳落叶、落花、烟蒂、纸屑等固体可视垃圾，同时强力吸附地面浮尘与微颗粒。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="brochure-section" id="product-specs">
+        <div class="brochure-shell">
+            <div class="brochure-section__header">
+                <span>技术参数</span>
+                <span>Fortrix Robotics</span>
+            </div>
+            <div class="brochure-section__rule"></div>
+
+            <div class="spec-layout">
+                <table class="spec-table">
+                    <tbody>
+                        <tr class="spec-table__section"><th>尺寸</th><th></th></tr>
+                        <tr><td>总长(不含扫盘)(mm)</td><td>1673</td></tr>
+                        <tr><td>总宽(不含扫盘)(mm)</td><td>890</td></tr>
+                        <tr><td>总高(不含传感器)(mm)</td><td>1360</td></tr>
+                        <tr><td>轴距(mm)</td><td>800</td></tr>
+                        <tr><td>轮中心距(mm)</td><td>889</td></tr>
+                        <tr><td>最小转弯半径(外廓)(mm)</td><td>907</td></tr>
+                        <tr><td>前轮转角范围(度)</td><td>±60</td></tr>
+                        <tr><td>轮胎规格(mm)</td><td>--</td></tr>
+                        <tr class="spec-table__section"><th>质量</th><th></th></tr>
+                        <tr><td>最大总质量</td><td>--</td></tr>
+                        <tr><td>底盘质量</td><td>--</td></tr>
+                        <tr class="spec-table__section"><th>性能</th><th></th></tr>
+                        <tr><td>水箱容积(L)</td><td>--</td></tr>
+                        <tr><td>垃圾箱容积(L)</td><td>--</td></tr>
+                        <tr><td>清扫宽度(mm)</td><td>1300</td></tr>
+                    </tbody>
+                </table>
+
+                <table class="spec-table">
+                    <tbody>
+                        <tr><td>作业速度(km/h)</td><td>6~8</td></tr>
+                        <tr><td>清扫效率(m²/h)</td><td>最高 16000</td></tr>
+                        <tr><td>人机清扫效率比</td><td>10:1</td></tr>
+                        <tr class="spec-table__section"><th>电气</th><th></th></tr>
+                        <tr><td>电量(kWh)</td><td>--</td></tr>
+                        <tr><td>电压(V)</td><td>--</td></tr>
+                        <tr><td>驱动电机功率(kW)</td><td>--</td></tr>
+                        <tr><td>驱动电机转速(rpm)</td><td>--</td></tr>
+                        <tr><td>离心风机功率(W)</td><td>--</td></tr>
+                        <tr class="spec-table__section"><th>自动驾驶配置</th><th></th></tr>
+                        <tr><td>场景</td><td>厂区 / 园区等半封闭场景，无交通灯，无高速运动物体</td></tr>
+                        <tr><td>激光雷达</td><td>3 个</td></tr>
+                        <tr><td>摄像头</td><td>5 个</td></tr>
+                        <tr><td>定位精度</td><td>≤5cm</td></tr>
+                        <tr><td>单次充电作业面积</td><td>--</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="spec-note">
+                备注：环卫保洁人员清扫效率日均 6000-7000m²，时均 1200-1400m²。
+                规格和细节以最终销售合同为准，以上信息仅供参考。
+            </p>
+        </div>
+    </section>
+
+    <section class="brochure-section" id="product-technology">
+        <div class="brochure-shell">
+            <div class="brochure-section__header">
+                <span>核心技术</span>
+                <span>Fortrix Robotics</span>
+            </div>
+            <div class="brochure-section__rule"></div>
+
+            <p class="technology-intro">
+                Robosweeper P1 的卓越性能，源于矩略科技领先的自动驾驶技术积累，
+                通过感知、定位、决策与远程控制的全链路技术闭环，实现无人作业的高效与安全。
+            </p>
+
+            <div class="technology-layout">
+                <div class="technology-visual">
+                    <div class="render-card render-card--tech">
+                        <div class="product-photo product-photo--tech">
+                            <img
+                                class="product-photo__image product-photo__image--tech"
+                                src="{% static 'images/product/machine_three_view.png' %}"
+                                alt="Robosweeper P1 三视图"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technology-grid">
+                    <article class="technology-card">
+                        <h2>360° 无死角多重感知融合</h2>
+                        <p>融合激光雷达、摄像头，实现全天候多维度感知。检测精度高达 99%，轮廓误差 &lt; 5cm，速度感知延迟 &lt; 10 毫秒，构建敏锐“感官”。</p>
+                    </article>
+                    <article class="technology-card">
+                        <h2>厘米级多源融合精准定位</h2>
+                        <p>采用多源融合定位技术，实现误差 &lt; 2cm 的实时定位。即使在隧道、高楼峡谷等 GPS 信号丢失场景，仍能保持稳定、精确的自主定位能力。</p>
+                    </article>
+                    <article class="technology-card">
+                        <h2>海量数据训练的智慧决策</h2>
+                        <p>依托全球 30+ 城市、2200+ 天运营经验训练深度学习模型。从容应对城中村、早晚高峰拥堵等复杂场景，让无人作业的“大脑”更聪明、更可靠。</p>
+                    </article>
+                    <article class="technology-card">
+                        <h2>双模远程控制的安全防线</h2>
+                        <p>远程控制中心可发送决策建议辅助车辆，极端情况可实现安全员完全接管，构建“建议 + 接管”双模机制，为无人作业提供 100% 的安全兜底保障。</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
