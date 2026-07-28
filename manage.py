@@ -10,7 +10,7 @@ def main(
         os.execv(sys.executable, [sys.executable, "-u", *sys.argv])
 
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "fortrix_site.settings")
-
+ 
     from django.core.management import execute_from_command_line
 
     execute_from_command_line(sys.argv)

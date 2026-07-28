@@ -1,5 +1,10 @@
 from pathlib import Path
 
+# {% extends %}、{% block %}、{% include %} 是 Django 模板语法
+# Django 启动时会读取 settings.py
+# ROOT_URLCONF 指定总路由文件：fortrix_site.urls
+# TEMPLATES["BACKEND"] 指定模板引擎
+# "django.template.context_processors.request" 让模板里可以直接使用 request
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 

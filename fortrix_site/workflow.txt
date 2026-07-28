@@ -1,0 +1,8 @@
+浏览器请求 /product/
+Django 匹配 urls.py
+渲染 product/index.html
+发现 {% extends "base.html" %}
+加载 base.html
+替换 block
+解析 include/static/url
+返回纯 HTML
