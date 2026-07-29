@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# python manage.py runserver 0.0.0.0:8000
+# python manage.py runserver 0.0.0.0:8000   启动项目
 import os
 import sys
 

@@ -3,16 +3,29 @@
 {% url 'product' as product_url %}
 {% url 'about' as about_url %}
 
-<header class="site-header{% if request.path == product_url %} site-header--product{% elif request.path == about_url %} site-header--about{% endif %}" id="siteHeader">
+<!-- {% url 'product' as product_url %}
+    按路由名 product 反向解析 URL
+    在当前项目里，product_url == "/product/"
+-->
+
+<header class="site-header{% if request.path == product_url %} site-header--product{% endif %}" id="siteHeader">
+    <!-- request.path 是当前请求路径
+        例如访问 /product/ 时，request.path == "/product/"
+        默认 class 是 site-header
+        如果当前页是产品页，就额外拼上 site-header--product
+        最终可能是：
+        class="site-header"
+        或
+        class="site-header site-header--product"
+    -->
     <div class="site-header__inner">
         <a class="site-header__logo" href="{{ home_url }}" aria-label="Fortrix Robotics Home">
             <img
                 class="site-header__logo-image"
                 src="{% if request.path == product_url %}{% static 'images/branding/logo_dark_ch.png' %}{% else %}{% static 'images/branding/logo_light_ch.png' %}{% endif %}"
-                data-logo-light="{% static 'images/branding/logo_light_ch.png' %}"
-                data-logo-dark="{% static 'images/branding/logo_dark_ch.png' %}"
                 alt="Fortrix Robotics"
             >
+
         </a>
 
         <nav class="site-header__nav" aria-label="Primary">

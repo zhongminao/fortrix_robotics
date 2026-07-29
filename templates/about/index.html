@@ -12,191 +12,60 @@
 {% endblock %}
 
 {% block content %}
-<div class="about-page">
-    <section class="about-section about-section--snap about-section--hero" id="about-intro">
-        <div class="about-hero__bg about-hero__bg--grid" aria-hidden="true"></div>
-        <div class="about-hero__bg about-hero__bg--glow" aria-hidden="true"></div>
-
-        <div class="about-shell about-hero">
-            <div class="about-copy about-reveal">
-                <span class="about-eyebrow">About Fortrix Robotics</span>
-                <h1 class="about-title">关于矩略</h1>
-                <h2 class="about-subtitle">
-                    杭州矩略科技
-                    <span>城市自动化与具身智能系统创新者</span>
-                </h2>
-                <div class="about-body">
-                    <p>
-                        杭州矩略科技专注于 L4 自动驾驶与具身智能机器人，
-                        围绕复杂真实场景下的感知、决策、控制与执行构建统一智能底座。
-                    </p>
-                    <p>
-                        团队核心成员来自阿里达摩院、菜鸟无人车等自动驾驶与 AI 团队，
-                        兼具算法积累、系统架构能力与工程化落地经验。
-                    </p>
-                </div>
-                <ul class="about-pill-list">
-                    <li>L4 自动驾驶</li>
-                    <li>具身智能机器人</li>
-                    <li>工业视觉 AI</li>
-                </ul>
+<div class="about-founder-page">
+    <section class="ab1">
+        <h1 class="tit reveal" style="--delay: 80ms;">企业文化</h1>
+        <div class="pics" aria-hidden="true">
+            <div class="pic on">
+                <img src="{% static 'images/about/culture-vision.jpg' %}" alt="">
             </div>
-
-            <div class="hero-panel about-reveal" aria-hidden="true">
-                <div class="hero-panel__grid"></div>
-                <div class="hero-panel__halo"></div>
-                <div class="hero-panel__frame hero-panel__frame--outer"></div>
-                <div class="hero-panel__frame hero-panel__frame--inner"></div>
-                <div class="hero-panel__line hero-panel__line--h"></div>
-                <div class="hero-panel__line hero-panel__line--v"></div>
-                <div class="hero-panel__core">
-                    <span>Fortrix</span>
-                    <strong>One Brain<br>Multi Bodies</strong>
-                </div>
-                <div class="hero-panel__node hero-panel__node--top">感知</div>
-                <div class="hero-panel__node hero-panel__node--left">规划</div>
-                <div class="hero-panel__node hero-panel__node--right">控制</div>
-                <div class="hero-panel__node hero-panel__node--bottom">运维</div>
+            <div class="pic">
+                <img src="{% static 'images/about/culture-mission.jpg' %}" alt="">
             </div>
+        </div>
+        <div class="list">
+            <div class="item reveal" style="--delay: 180ms;">
+                <div class="txt">
+                    <h2 class="h">企业愿景</h2>
+                    <p class="p">成为具身智能机器人的核心赋能者</p>
+                </div>
+            </div>
+            <div class="item reveal" style="--delay: 240ms;">
+                <div class="txt">
+                    <h2 class="h">企业使命</h2>
+                    <p class="p">让一个智能大脑，驱动万千机器人</p>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-cards">
+            <article class="card reveal" style="--delay: 100ms;">
+                <img src="{% static 'images/about/culture-vision.jpg' %}" alt="企业愿景">
+                <div class="txt">
+                    <h2 class="h">企业愿景</h2>
+                    <p class="p">成为具身智能机器人的核心赋能者</p>
+                </div>
+            </article>
+            <article class="card reveal" style="--delay: 180ms;">
+                <img src="{% static 'images/about/culture-mission.jpg' %}" alt="企业使命">
+                <div class="txt">
+                    <h2 class="h">企业使命</h2>
+                    <p class="p">让一个智能大脑，驱动万千机器人</p>
+                </div>
+            </article>
         </div>
     </section>
 
-    <section class="about-section about-section--snap about-section--engineering" id="about-engineering">
-        <div class="about-shell about-split">
-            <div class="section-copy about-reveal">
-                <span class="about-label">工程基因</span>
-                <h2>让算法、硬件与真实场景形成稳定闭环。</h2>
-                <p>
-                    我们更关注系统在道路、园区、工厂等复杂现场中的持续工作能力，
-                    而不是一次性的演示效果。
-                </p>
-                <div class="section-meta">
-                    <span>感知</span>
-                    <span>规划</span>
-                    <span>控制</span>
-                    <span>执行</span>
+    <section class="ab2">
+        <div class="inner">
+            <h1 class="tit reveal" style="--delay: 60ms;">创始人寄语</h1>
+            <div class="quote-card reveal" style="--delay: 160ms;">
+                <div class="txt">
+                    <p class="reveal" style="--delay: 240ms;">矩略科技始终相信，真正有价值的机器人，不是孤立的单一设备，而是能够在不同场景、不同物理形态中持续复用与进化的智能能力。围绕“<span>一脑多体</span>”的核心理念，我们致力于打造统一的<span>具身智能大脑</span>，将感知、理解、决策与控制能力沉淀为可迁移、可复制的技术底座，让清洁机器人、轮足机器人及更多智能终端<span>共享同一套核心智能</span>，在城市服务、工业巡检、应急作业等复杂场景中高效协同。</p>
+                    <p class="reveal" style="--delay: 320ms;">未来，我们将持续深耕具身智能、自主导航、多模态感知与端侧决策等关键技术，推动机器人从“<span>单点功能</span>”走向“<span>通用能力</span>”，让智能真正走进更广阔的物理世界。</p>
                 </div>
-            </div>
-
-            <div class="orbit-system about-reveal" aria-hidden="true">
-                <svg class="orbit-system__svg" viewBox="0 0 640 640" role="presentation">
-                    <defs>
-                        <linearGradient id="orbitGradientA" x1="0" y1="0" x2="1" y2="1">
-                            <stop offset="0%" stop-color="#7cd6ff" stop-opacity="0.08"></stop>
-                            <stop offset="65%" stop-color="#7cd6ff" stop-opacity="0.34"></stop>
-                            <stop offset="100%" stop-color="#7cd6ff" stop-opacity="0.92"></stop>
-                        </linearGradient>
-                        <linearGradient id="orbitGradientB" x1="1" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stop-color="#5dffdb" stop-opacity="0.08"></stop>
-                            <stop offset="60%" stop-color="#5dffdb" stop-opacity="0.3"></stop>
-                            <stop offset="100%" stop-color="#5dffdb" stop-opacity="0.9"></stop>
-                        </linearGradient>
-                    </defs>
-                    <g class="orbit-track orbit-track--one">
-                        <circle class="orbit-track__path orbit-track__path--one" cx="320" cy="320" r="188" pathLength="100"></circle>
-                    </g>
-                    <g class="orbit-track orbit-track--two">
-                        <circle class="orbit-track__path orbit-track__path--two" cx="320" cy="320" r="144" pathLength="100"></circle>
-                    </g>
-                    <g class="orbit-track orbit-track--three">
-                        <circle class="orbit-track__path orbit-track__path--three" cx="320" cy="320" r="102" pathLength="100"></circle>
-                    </g>
-                </svg>
-                <div class="orbit-system__core">
-                    <span>系统底座</span>
-                    <strong>感知<br>决策<br>控制</strong>
-                </div>
-                <div class="orbit-system__node orbit-system__node--top">道路</div>
-                <div class="orbit-system__node orbit-system__node--left">园区</div>
-                <div class="orbit-system__node orbit-system__node--right">工厂</div>
-                <div class="orbit-system__node orbit-system__node--bottom">巡检</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-section about-section--snap about-section--trust" id="about-trust">
-        <div class="about-shell about-trust-layout">
-            <div class="trust-copy about-reveal">
-                <span class="about-label">可信落地</span>
-                <h2>把技术做成可部署、可运行、可持续迭代的产品。</h2>
-                <p>
-                    我们强调从算法到整机、从部署到运营的全链路闭环，
-                    让每一次能力升级都回到真实业务价值本身。
-                </p>
-            </div>
-
-            <div class="trust-board about-reveal" aria-hidden="true">
-                <div class="trust-board__glow"></div>
-                <article class="trust-card">
-                    <span>01</span>
-                    <strong>真实场景优先</strong>
-                    <p>围绕园区、道路与工业现场持续打磨系统能力。</p>
-                </article>
-                <article class="trust-card">
-                    <span>02</span>
-                    <strong>长周期运行</strong>
-                    <p>关注可靠性、维护效率与持续运营成本。</p>
-                </article>
-                <article class="trust-card">
-                    <span>03</span>
-                    <strong>工程协同</strong>
-                    <p>让软件、硬件与交付体系形成可复制的方法论。</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-section about-section--snap about-section--vision" id="about-vision">
-        <div class="about-shell about-vision-layout">
-            <div class="vision-copy about-reveal">
-                <span class="about-label">我们的愿景</span>
-                <h2>让自动驾驶与具身智能，真正进入城市与产业现场。</h2>
-                <p>
-                    当机器人不再只是展示样机，而是稳定参与真实作业，
-                    智能系统才会成为城市与产业的基础能力。
-                </p>
-            </div>
-        </div>
-
-        <div class="vision-wave about-reveal" aria-hidden="true">
-            <div class="vision-wave__track">
-                <svg class="vision-wave__svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-                    <path class="vision-wave__back" d="M0,270 C240,312 420,112 720,152 C1010,192 1180,272 1440,284 V320 H0 Z"></path>
-                    <path class="vision-wave__front" d="M0,290 C260,274 500,186 720,222 C950,262 1170,308 1440,292 V320 H0 Z"></path>
-                </svg>
-                <svg class="vision-wave__svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-                    <path class="vision-wave__back" d="M0,270 C240,312 420,112 720,152 C1010,192 1180,272 1440,284 V320 H0 Z"></path>
-                    <path class="vision-wave__front" d="M0,290 C260,274 500,186 720,222 C950,262 1170,308 1440,292 V320 H0 Z"></path>
-                </svg>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-section about-section--snap about-section--mission" id="about-mission">
-        <div class="about-shell about-mission-layout">
-            <div class="mission-media about-reveal">
-                <span class="mission-media__eyebrow">Placeholder</span>
-                <div class="mission-media__screen">
-                    <div class="mission-media__play"></div>
-                    <strong>品牌影片 / 团队画面 / 研发现场</strong>
-                    <span>这里后续替换成视频或大图即可</span>
-                </div>
-            </div>
-
-            <div class="mission-copy about-reveal">
-                <span class="about-label">我们的使命</span>
-                <h2>用先进智能系统，推动真实世界的效率升级。</h2>
-                <p>
-                    让自动驾驶、具身智能机器人与工业 AI
-                    以可部署、可运营、可持续迭代的方式进入现实世界。
-                </p>
-                <ul class="mission-points">
-                    <li>面向复杂真实场景持续演进</li>
-                    <li>坚持工程化与产品化并重</li>
-                    <li>让技术转化为稳定生产力</li>
-                </ul>
             </div>
         </div>
     </section>
 </div>
 {% endblock %}
+
