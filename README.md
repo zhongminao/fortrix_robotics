@@ -1,26 +1,24 @@
-# Fortrix Robotics 网站 Demo
+# Fortrix Robotics 官网项目
 
-这是一个基于 Django 的静态官网示例项目，当前包含 3 个页面：
+这是 Fortrix Robotics 的官网项目，基于 Django 模板系统构建，当前包含 3 个页面：
 
 - 首页：`/`
 - 产品页：`/product/`
 - 关于我们：`/about/`
 
-项目已经接入公共页眉、公共页脚，以及页面级样式和交互脚本，适合继续改官网内容、页眉导航和展示文案。
+项目已经接入公共页眉、公共页脚，以及页面级样式和交互脚本，适合继续维护官网内容、页眉导航和展示文案。
 
 ## 运行环境
 
-本项目在下面的环境中已验证可运行：
+推荐运行环境：
 
 - Python `3.13.2`
 - Django `6.0.7`
 - SQLite `db.sqlite3`
 
-如果你在作者当前服务器上直接运行，默认环境是 `py313`。
-
 ## 快速启动
 
-如果你是第一次拿到这个仓库，推荐按下面步骤启动：
+第一次使用时，按下面步骤启动：
 
 ```bash
 git clone git@github.com:zhongminao/fortrix_robotics.git
@@ -37,16 +35,6 @@ python manage.py runserver 0.0.0.0:8000
 - `http://127.0.0.1:8000/`
 - `http://127.0.0.1:8000/product/`
 - `http://127.0.0.1:8000/about/`
-
-如果你就在作者当前服务器上操作，也可以直接：
-
-```bash
-source ~/miniconda3/etc/profile.d/conda.sh
-conda activate py313
-cd ~/mydisk/web/fortrix_robotics
-python manage.py migrate
-python manage.py runserver 0.0.0.0:8000
-```
 
 ## 项目结构
 
@@ -113,13 +101,10 @@ fortrix_robotics/
 
 ## 开发前建议
 
-- 当前 `DEBUG = True`，`ALLOWED_HOSTS = ["*"]`，更适合开发环境，不适合直接作为生产配置。
-- 项目使用 SQLite，演示和本地联调足够，生产环境建议切换数据库和静态资源部署方案。
+- 当前 `DEBUG = True`，`ALLOWED_HOSTS = ["*"]`，适合开发环境，不适合直接作为生产配置。
+- 项目默认使用 SQLite，生产环境建议切换数据库和静态资源部署方案。
 - 修改完成后，至少运行一次检查：
 
 ```bash
 python manage.py check
 ```
-
-2026-07-29 已在当前服务器环境下执行过 `python manage.py check`，结果为通过。
-
