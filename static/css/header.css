@@ -6,12 +6,37 @@
     z-index: 1000;
     width: 100%;
     padding: 0 56px;
-    background-color: transparent;
-    transition: top 0.3s ease, background-color 0.3s ease;
+    background: rgba(17, 24, 39, 0.32);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition:
+        top 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease,
+        backdrop-filter 0.3s ease,
+        -webkit-backdrop-filter 0.3s ease;
+}
+
+.site-header--overlay {
+    background: transparent;
+    border-bottom-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
 }
 
 .site-header--solid {
-    background-color: var(--header-bg);
+    background: rgba(17, 24, 39, 0.32);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.site-header--overlay.site-header--solid {
+    background: rgba(17, 24, 39, 0.32);
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
 }
 
 .site-header--hidden {
@@ -58,13 +83,13 @@
     background: transparent;
     font-size: 17px;
     font-weight: 500;
-    color: var(--header-text);
+    color: #111111;
     cursor: pointer;
     transition: color 0.2s ease;
 }
 
 .site-header__item:hover {
-    color: var(--header-accent);
+    color: #2b2b2b;
 }
 
 .site-header__item--static {
@@ -72,7 +97,7 @@
 }
 
 .site-header__item--static:hover {
-    color: var(--header-text);
+    color: #111111;
 }
 
 @media (max-width: 1100px) {

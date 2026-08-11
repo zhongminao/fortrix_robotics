@@ -34,54 +34,6 @@ img {
     min-height: auto;
 }
 
-.site-header--about {
-    background: transparent;
-    border-bottom: 1px solid transparent;
-}
-
-.site-header--about .site-header__item {
-    color: rgba(244, 249, 255, 0.9);
-}
-
-.site-header--about .site-header__item:hover {
-    color: #ccecff;
-}
-
-.site-header--about .site-header__item--static:hover {
-    color: rgba(244, 249, 255, 0.9);
-}
-
-.site-header--about .site-header__logo {
-    margin-top: -2px;
-}
-
-.site-header--about .site-header__logo-image {
-    height: 34px;
-}
-
-.site-header--about.site-header--solid {
-    background: rgba(9, 20, 39, 0.24);
-    border-bottom-color: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(18px);
-}
-
-.site-header--about.site-header--surface-light {
-    background: rgba(247, 243, 234, 0.82);
-    border-bottom-color: rgba(35, 47, 39, 0.08);
-}
-
-.site-header--about.site-header--surface-light .site-header__item {
-    color: #25353b;
-}
-
-.site-header--about.site-header--surface-light .site-header__item:hover {
-    color: #146f91;
-}
-
-.site-header--about.site-header--surface-light .site-header__item--static:hover {
-    color: #25353b;
-}
-
 .about-founder-page {
     width: 100%;
 }
