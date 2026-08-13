@@ -428,3 +428,10 @@ img {
         font-size: 15px;
     }
 }
+
+
+body:has(.about-founder-page) .site-header__item,
+body:has(.about-founder-page) .site-header__item:hover,
+body:has(.about-founder-page) .site-header__item--static:hover {
+    color: #ffffff;
+}

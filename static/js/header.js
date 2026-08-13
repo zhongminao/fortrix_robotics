@@ -1,7 +1,10 @@
 (function() {
     var header = document.querySelector("#siteHeader");
+    var productMenuTrigger = document.querySelector("#productMenuTrigger");
+    var productMenu = document.querySelector("#productMenu");
     var lastScrollY = window.scrollY;
     var hideTimer = null;
+    var productMenuTimer = null;
     var autoHideDelay = 5000;
 
     if (!header) {
@@ -53,6 +56,69 @@
         lastScrollY = currentScrollY;
     }
 
+    function updateProductMenuPosition() {
+        var triggerRect;
+        var menuWidth;
+        var minLeft;
+        var maxLeft;
+        var triggerCenter;
+        var menuLeft;
+
+        if (!productMenuTrigger || !productMenu) {
+            return;
+        }
+
+        triggerRect = productMenuTrigger.getBoundingClientRect();
+        menuWidth = Math.min(720, window.innerWidth - 48);
+        minLeft = 24 + menuWidth / 2;
+        maxLeft = window.innerWidth - 24 - menuWidth / 2;
+        triggerCenter = triggerRect.left + triggerRect.width / 2;
+        menuLeft = Math.min(Math.max(triggerCenter, minLeft), maxLeft);
+
+        productMenu.style.setProperty("--product-menu-left", menuLeft + "px");
+    }
+
+    function openProductMenu() {
+        if (!productMenuTrigger || !productMenu) {
+            return;
+        }
+
+        window.clearTimeout(productMenuTimer);
+        productMenuTimer = null;
+        updateProductMenuPosition();
+        productMenuTrigger.classList.add("is-active");
+        productMenu.classList.add("is-open");
+        header.classList.remove("site-header--hidden");
+    }
+
+    function closeProductMenu() {
+        if (!productMenuTrigger || !productMenu) {
+            return;
+        }
+
+        window.clearTimeout(productMenuTimer);
+        productMenuTimer = window.setTimeout(function() {
+            productMenuTrigger.classList.remove("is-active");
+            productMenu.classList.remove("is-open");
+        }, 120);
+    }
+
     updateHeader();
     window.addEventListener("scroll", updateHeader, { passive: true });
+    window.addEventListener("resize", updateProductMenuPosition);
+
+    if (productMenuTrigger && productMenu) {
+        productMenuTrigger.addEventListener("mouseenter", openProductMenu);
+        productMenuTrigger.addEventListener("focus", openProductMenu);
+
+        productMenuTrigger.addEventListener("mouseleave", closeProductMenu);
+        productMenu.addEventListener("mouseenter", openProductMenu);
+        productMenu.addEventListener("mouseleave", closeProductMenu);
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                productMenuTrigger.classList.remove("is-active");
+                productMenu.classList.remove("is-open");
+            }
+        });
+    }
 })();

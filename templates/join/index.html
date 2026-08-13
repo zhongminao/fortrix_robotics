@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Fortrix Robotics | 加入我们{% endblock %}
+
+{% block page_css %}
+<link rel="stylesheet" href="{% static 'css/join.css' %}">
+{% endblock %}
+
+{% block page_js %}
+<script src="{% static 'js/join.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="join-page">
+    <nav class="join-side-nav" aria-label="加入我们页面目录">
+        <a class="join-side-nav__item is-active" href="#join-values" data-section="join-values">我们期待的人</a>
+        <a class="join-side-nav__item" href="#join-jobs" data-section="join-jobs">开放岗位</a>
+        <a class="join-side-nav__item" href="#join-appendix" data-section="join-appendix">附录链接</a>
+    </nav>
+
+    <section class="join-hero">
+        <div class="join-hero__inner">
+            <p class="join-hero__eyebrow">Join Fortrix</p>
+            <h1 class="join-hero__title">认真回馈每一份期待</h1>
+            <p class="join-hero__text">
+                在 Fortrix Robotics，我们把具身智能、机器人系统和真实场景放在同一张工作台上。欢迎相信长期主义、重视工程细节、愿意把想法推进到落地现场的人加入我们。
+            </p>
+            <div class="join-hero__actions">
+                <a class="join-button join-button--primary" href="#join-jobs">查看开放岗位</a>
+                <a class="join-button join-button--ghost" href="#join-appendix">查看附录入口</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-section" id="join-values">
+        <div class="join-shell">
+            <div class="join-section__head">
+                <h2>我们寻找能把复杂问题做清楚的人</h2>
+                <p>
+                    Fortrix 关注真实场景里的机器人能力，把技术深度、工程质量和交付结果放在同一套标准里衡量。
+                </p>
+            </div>
+            <div class="join-values">
+                <article class="join-value">
+                    <span>01</span>
+                    <h3>把用户现场当作答案来源</h3>
+                    <p>重视真实运行数据、现场反馈和交付质量，让产品能力经得起高频使用。</p>
+                </article>
+                <article class="join-value">
+                    <span>02</span>
+                    <h3>把技术深度变成稳定体验</h3>
+                    <p>从感知、决策到控制，把研究突破沉淀为可维护、可复用的工程系统。</p>
+                </article>
+                <article class="join-value">
+                    <span>03</span>
+                    <h3>把协作做成确定性</h3>
+                    <p>尊重专业边界，也愿意跨过边界解决问题，让每一次合作都有清晰结果。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-section join-section--white" id="join-jobs">
+        <div class="join-shell">
+            <div class="join-section__head">
+                <h2>开放岗位</h2>
+                <p>下表为岗位占位内容，正式上线前可替换岗位 JD、投递邮箱或外部招聘系统链接。</p>
+            </div>
+            <div class="join-jobs">
+                <table>
+                    <caption>岗位表格占位版：请在上线前确认真实岗位、招聘负责人和投递入口。</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">岗位名称</th>
+                            <th scope="col">方向</th>
+                            <th scope="col">工作地点</th>
+                            <th scope="col">经验要求</th>
+                            <th scope="col">关键词</th>
+                            <th scope="col">投递入口</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>机器人算法工程师</strong></td>
+                            <td>感知 / 定位 / 决策</td>
+                            <td>上海 / 杭州</td>
+                            <td>3 年以上</td>
+                            <td><span class="join-tag">SLAM</span></td>
+                            <td><a class="join-table-link" href="#join-appendix">链接占位</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>嵌入式软件工程师</strong></td>
+                            <td>机器人控制系统</td>
+                            <td>上海</td>
+                            <td>2 年以上</td>
+                            <td><span class="join-tag join-tag--green">Linux / C++</span></td>
+                            <td><a class="join-table-link" href="#join-appendix">链接占位</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>机械结构工程师</strong></td>
+                            <td>整机结构 / 可靠性</td>
+                            <td>苏州 / 上海</td>
+                            <td>3 年以上</td>
+                            <td><span class="join-tag join-tag--gold">量产经验</span></td>
+                            <td><a class="join-table-link" href="#join-appendix">链接占位</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>产品经理</strong></td>
+                            <td>机器人应用场景</td>
+                            <td>上海</td>
+                            <td>3 年以上</td>
+                            <td><span class="join-tag">场景落地</span></td>
+                            <td><a class="join-table-link" href="#join-appendix">链接占位</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>销售解决方案经理</strong></td>
+                            <td>行业客户 / 项目方案</td>
+                            <td>全国</td>
+                            <td>5 年以上</td>
+                            <td><span class="join-tag join-tag--green">客户交付</span></td>
+                            <td><a class="join-table-link" href="#join-appendix">链接占位</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-section" id="join-appendix">
+        <div class="join-shell">
+            <div class="join-appendix">
+                <div class="join-appendix__main">
+                    <h2>附录与外部入口</h2>
+                    <p>
+                        这里先放占位链接，后续可替换为岗位详情 PDF、企业微信投递二维码、招聘平台职位列表，或公司介绍附件。
+                    </p>
+                    <div class="join-appendix__links">
+                        <a href="#">岗位详情附录<span>待替换 URL</span></a>
+                        <a href="#">校园招聘计划<span>待替换 URL</span></a>
+                        <a href="#">在线投递表单<span>待替换 URL</span></a>
+                    </div>
+                </div>
+                <aside class="join-appendix__side">
+                    <div>
+                        <h3>下一步可替换内容</h3>
+                        <p>确认岗位列表、真实投递方式、办公室城市与招聘联系人后，即可把占位内容替换成正式招聘入口。</p>
+                    </div>
+                    <p class="join-contact">
+                        联系方式占位：hr@fortrix.ai<br>
+                        招聘城市占位：上海 / 苏州 / 杭州
+                    </p>
+                </aside>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+

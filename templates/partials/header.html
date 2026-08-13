@@ -2,22 +2,49 @@
 {% url 'home' as home_url %}
 {% url 'product' as product_url %}
 {% url 'about' as about_url %}
+{% url 'join' as join_url %}
 
-<header class="site-header{% if request.path == home_url or request.path == about_url %} site-header--overlay{% endif %}" id="siteHeader">
+<header class="site-header{% if request.path == home_url or request.path == about_url or request.path == join_url %} site-header--overlay{% endif %}" id="siteHeader">
     <div class="site-header__inner">
-        <a class="site-header__logo" href="{{ home_url }}" aria-label="Fortrix Robotics Home">
+        <div class="site-header__logo" aria-label="Fortrix Robotics">
             <img
                 class="site-header__logo-image"
                 src="{% static 'images/branding/logo_dark_ch.png' %}"
                 alt="Fortrix Robotics"
             >
-        </a>
+        </div>
 
         <nav class="site-header__nav" aria-label="Primary">
-            <a class="site-header__item" href="{{ product_url }}">产品矩阵</a>
-            <span class="site-header__item site-header__item--static">一脑多体架构</span>
+            <a class="site-header__item" href="{{ home_url }}">首页</a>
+            <a class="site-header__item site-header__item--product" href="{{ product_url }}" id="productMenuTrigger">
+                <span>产品矩阵</span>
+                <span class="site-header__chevron" aria-hidden="true"></span>
+            </a>
+            <span class="site-header__item site-header__item--static">核心技术</span>
             <a class="site-header__item" href="{{ about_url }}">关于我们</a>
-            <span class="site-header__item site-header__item--static">加入我们</span>
+            <a class="site-header__item" href="{{ join_url }}">加入我们</a>
+            <span class="site-header__item site-header__item--static">新闻资讯</span>
         </nav>
+    </div>
+
+    <div class="product-menu" id="productMenu" aria-label="产品矩阵">
+        <div class="product-menu__grid">
+            <a class="product-menu__card" href="{{ product_url }}#product-profile">
+                <span class="product-menu__media product-menu__media--primary"></span>
+                <span class="product-menu__name">智环系列</span>
+            </a>
+            <span class="product-menu__card product-menu__card--disabled">
+                <span class="product-menu__media product-menu__media--secondary"></span>
+                <span class="product-menu__name">智巡系列</span>
+            </span>
+            <span class="product-menu__card product-menu__card--disabled">
+                <span class="product-menu__media product-menu__media--tertiary"></span>
+                <span class="product-menu__name">智检系列</span>
+            </span>
+            <span class="product-menu__card product-menu__card--disabled">
+                <span class="product-menu__media product-menu__media--tertiary"></span>
+                <span class="product-menu__name">智脑系列</span>
+            </span>
+        </div>
     </div>
 </header>

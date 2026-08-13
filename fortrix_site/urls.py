@@ -22,4 +22,9 @@ urlpatterns = [
         TemplateView.as_view(template_name="about/index.html"),
         name="about",
     ),
+    path(
+        "join/",
+        TemplateView.as_view(template_name="join/index.html"),
+        name="join",
+    ),
 ]
