@@ -1,0 +1,140 @@
+Fortrix Robotics photo_log.txt
+Created: 2026-08-15
+Policy: append-only. Do not delete old image records when replacing images. Add a new record and mark old records as "replaced / reserved" if needed.
+
+License baseline for current website images:
+- Platform: Unsplash
+- License reference: https://unsplash.com/license
+- Permission summary checked on 2026-08-15: Unsplash images may be used for free for commercial and non-commercial purposes. Attribution is not required by the Unsplash License, though it is appreciated. Images should not be sold as unmodified standalone copies or used to build a competing image service.
+- Production note: current about-page templates reference local server copies under /static/images/founder-team/. The original Unsplash CDN URLs below are retained only as source and license records.
+
+Current image records
+
+1. Team collaboration / office hero
+- Asset id: photo-1568992687947-868a62a9f521
+- Original source URL:
+  https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=2400&q=80
+- Local server path:
+  /static/images/founder-team/team-office-hero.jpg
+- Platform/source: Unsplash CDN original, server-local copy in the Fortrix Robotics Django project.
+- Permission: usable under Unsplash License for commercial website use; attribution not required.
+- Current usage:
+  /about/ hero image
+  /about/people/chen-peng.html profile-story side image
+- Status: active placeholder, keep for possible future reuse.
+
+2. Circuit board / technical foundation
+- Asset id: photo-1518770660439-4636190af475
+- Original source URL:
+  https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2200&q=80
+- Local server path:
+  /static/images/founder-team/circuit-technical.jpg
+- Platform/source: Unsplash CDN original, server-local copy in the Fortrix Robotics Django project.
+- Permission: usable under Unsplash License for commercial website use; attribution not required.
+- Current usage:
+  /about/ Xu Chao story image
+  /about/people/xu-chao.html profile hero visual source record
+  /about/people/fang-qiang.html profile-story side image
+- Status: active placeholder, keep for possible future reuse.
+
+3. Engineering / industrial system
+- Asset id: photo-1581092334651-ddf26d9a09d0
+- Original source URL:
+  https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=2200&q=80
+- Local server path:
+  /static/images/founder-team/engineering-industrial.jpg
+- Platform/source: Unsplash CDN original, server-local copy in the Fortrix Robotics Django project.
+- Permission: usable under Unsplash License for commercial website use; attribution not required.
+- Current usage:
+  /about/ Ye Bo story image
+  /about/ closing gallery Engineering image
+  /about/people/ye-bo.html profile hero visual source record
+  /about/people/xu-chao.html profile-story side image
+- Status: active placeholder, keep for possible future reuse.
+
+4. Robot / embodied intelligence
+- Asset id: photo-1485827404703-89b55fcc595e
+- Original source URL:
+  https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=2200&q=80
+- Local server path:
+  /static/images/founder-team/robot-embodied.jpg
+- Platform/source: Unsplash CDN original, server-local copy in the Fortrix Robotics Django project.
+- Permission: usable under Unsplash License for commercial website use; attribution not required.
+- Current usage:
+  /about/ Ren Zhigang story image
+  /about/people/ren-zhigang.html profile hero visual source record
+- Status: active placeholder, keep for possible future reuse.
+
+5. Robot hardware / edge deployment
+- Asset id: photo-1558002038-1055907df827
+- Original source URL:
+  https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=2200&q=80
+- Local server path:
+  /static/images/founder-team/robot-hardware-edge.jpg
+- Platform/source: Unsplash CDN original, server-local copy in the Fortrix Robotics Django project.
+- Permission: usable under Unsplash License for commercial website use; attribution not required.
+- Current usage:
+  /about/ Fang Qiang story image
+  /about/people/fang-qiang.html profile hero visual source record
+  /about/people/ye-bo.html profile-story side image
+- Status: active placeholder, keep for possible future reuse.
+
+6. Team computing / perception development
+- Asset id: photo-1519389950473-47ba0277781c
+- Original source URL:
+  https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2200&q=80
+- Local server path:
+  /static/images/founder-team/team-computing.jpg
+- Platform/source: Unsplash CDN original, server-local copy in the Fortrix Robotics Django project.
+- Permission: usable under Unsplash License for commercial website use; attribution not required.
+- Current usage:
+  /about/ Chen Peng story image
+  /about/people/chen-peng.html profile hero visual source record
+  /about/people/ren-zhigang.html profile-story side image
+- Status: active placeholder, keep for possible future reuse.
+
+7. Product / commercial collaboration
+- Asset id: photo-1556761175-b413da4baf72
+- Original source URL:
+  https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=2200&q=80
+- Local server path:
+  /static/images/founder-team/commercial-collaboration.jpg
+- Platform/source: Unsplash CDN original, server-local copy in the Fortrix Robotics Django project.
+- Permission: usable under Unsplash License for commercial website use; attribution not required.
+- Current usage:
+  /about/ Jin Yuzhe story image
+  /about/ closing gallery Delivery image
+  /about/people/jin-yuzhe.html profile hero visual source record
+- Status: active placeholder, keep for possible future reuse.
+
+8. Whiteboard / research discussion
+- Asset id: photo-1552664730-d307ca884978
+- Original source URL:
+  https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2200&q=80
+- Local server path:
+  /static/images/founder-team/whiteboard-research.jpg
+- Platform/source: Unsplash CDN original, server-local copy in the Fortrix Robotics Django project.
+- Permission: usable under Unsplash License for commercial website use; attribution not required.
+- Current usage:
+  /about/ closing gallery Research image
+  /about/people/jin-yuzhe.html profile-story side image
+- Status: active placeholder, keep for possible future reuse.
+
+Append note 2026-08-15
+- Layout update: person detail pages no longer use full-width standalone scene images. Existing scene assets were retained as side images paired with text in the profile-story sections.
+- No image records were deleted. Existing records above remain useful for future replacement or reuse.
+
+Append note 2026-08-15
+- Server-local copies were downloaded to the remote project under:
+  /home/zhong/mydisk/web/fortrix_robotics/static/images/founder-team/
+- Current about-page templates reference local static paths instead of Unsplash CDN URLs.
+- Local copy mapping:
+  photo-1568992687947-868a62a9f521 -> /static/images/founder-team/team-office-hero.jpg
+  photo-1518770660439-4636190af475 -> /static/images/founder-team/circuit-technical.jpg
+  photo-1581092334651-ddf26d9a09d0 -> /static/images/founder-team/engineering-industrial.jpg
+  photo-1485827404703-89b55fcc595e -> /static/images/founder-team/robot-embodied.jpg
+  photo-1558002038-1055907df827 -> /static/images/founder-team/robot-hardware-edge.jpg
+  photo-1519389950473-47ba0277781c -> /static/images/founder-team/team-computing.jpg
+  photo-1556761175-b413da4baf72 -> /static/images/founder-team/commercial-collaboration.jpg
+  photo-1552664730-d307ca884978 -> /static/images/founder-team/whiteboard-research.jpg
+

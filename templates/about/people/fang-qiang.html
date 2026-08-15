@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}方强 | Fortrix Robotics{% endblock %}
+
+{% block page_css %}
+<link rel="stylesheet" href="{% static 'css/about-detail.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="founder-detail-page">
+<section class="person-hero">
+      <div class="person-hero__inner">
+        <div class="person-hero__copy">
+          <p class="person-hero__eyebrow">Edge AI & Deployment</p>
+          <h1>方强</h1>
+          <p class="person-hero__title">端侧 AI、模型量化与机器人边缘计算负责人<br>专业大模型部署与实时推理</p>
+          <p class="person-hero__summary">负责端侧 AI、模型量化、机器人边缘计算与专业大模型部署，解决大模型进入真实机器人后的算力、时延、稳定性与成本问题。</p>
+          <div class="person-data" aria-label="方强人物信息">
+            <div class="person-data__item"><span>Compute</span><strong>端侧 AI</strong></div>
+            <div class="person-data__item"><span>Focus</span><strong>模型量化</strong></div>
+            <div class="person-data__item"><span>Outcome</span><strong>实时推理</strong></div>
+          </div>
+        </div>
+        <div class="person-hero__visual">
+          <div class="person-avatar" aria-label="方强圆形头像占位"><span>方</span></div>
+          <p class="person-hero__caption">Edge AI / Robot Deployment</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile-story">
+      <div class="profile-story__inner">
+        <div class="profile-story__text">
+          <span class="section-eyebrow">Deployment Direction</span>
+          <h2>在算力、时延和成本约束下部署智能能力。</h2>
+          <p>方强关注模型从云端能力到机器人端侧能力的迁移，处理算力预算、模型压缩、实时推理和部署稳定性等工程问题。</p>
+        </div>
+        <div
+          class="profile-story__image asset-circuit-technical"
+          aria-label="芯片与边缘计算辅助图"
+        ></div>
+      </div>
+    </section>
+
+    <section class="bio-section">
+      <div class="bio-section__inner">
+        <aside class="bio-aside">
+          <strong>Focus</strong>
+          端侧 AI<br>
+          模型量化<br>
+          边缘计算<br>
+          专业大模型部署
+        </aside>
+        <div class="bio-content">
+          <p class="bio-callout">模型落到机器人上，才真正开始接受现场约束的检验。</p>
+          <div class="bio-block">
+            <h2>端侧部署能力</h2>
+            <p>方强关注模型从云端能力到机器人端侧能力的迁移，处理算力预算、推理延迟、模型压缩、部署稳定性等工程问题。</p>
+          </div>
+          <div class="bio-block">
+            <h2>在 Fortrix 的角色</h2>
+            <p>他负责端侧 AI 与专业大模型部署链路，让机器人在真实场景中拥有可持续运行的实时智能能力，并控制系统成本。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="back-section">
+      <div class="back-section__inner">
+        <a class="back-link" href="../#people">← Back to founder team</a>
+      </div>
+    </section>
+</div>
+{% endblock %}
+

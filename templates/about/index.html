@@ -7,64 +7,181 @@
 <link rel="stylesheet" href="{% static 'css/about.css' %}">
 {% endblock %}
 
-{% block page_js %}
-<script src="{% static 'js/about.js' %}"></script>
-{% endblock %}
-
 {% block content %}
-<div class="about-founder-page">
-    <section class="ab1">
-        <h1 class="tit reveal" style="--delay: 80ms;">企业文化</h1>
-        <div class="pics" aria-hidden="true">
-            <div class="pic on">
-                <img src="{% static 'images/about/culture-vision.jpg' %}" alt="">
-            </div>
-            <div class="pic">
-                <img src="{% static 'images/about/culture-mission.jpg' %}" alt="">
-            </div>
+<div class="founder-team-page">
+<section class="team-hero">
+      <div
+        class="team-hero__frame asset-team-office-hero"
+        aria-label="团队协作场景占位图"
+      >
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Our People</p>
+          <h1 class="hero-title">A team building intelligence for the physical world.</h1>
+          <p class="hero-text">
+            让智能真正进入物理世界，需要科学问题意识、产业级工程能力，也需要愿意把技术推进到真实现场的人。
+          </p>
         </div>
-        <div class="list">
-            <div class="item reveal" style="--delay: 180ms;">
-                <div class="txt">
-                    <h2 class="h">企业愿景</h2>
-                    <p class="p">成为具身智能机器人的核心赋能者</p>
-                </div>
-            </div>
-            <div class="item reveal" style="--delay: 240ms;">
-                <div class="txt">
-                    <h2 class="h">企业使命</h2>
-                    <p class="p">让一个智能大脑，驱动万千机器人</p>
-                </div>
-            </div>
-        </div>
-        <div class="mobile-cards">
-            <article class="card reveal" style="--delay: 100ms;">
-                <img src="{% static 'images/about/culture-vision.jpg' %}" alt="企业愿景">
-                <div class="txt">
-                    <h2 class="h">企业愿景</h2>
-                    <p class="p">成为具身智能机器人的核心赋能者</p>
-                </div>
-            </article>
-            <article class="card reveal" style="--delay: 180ms;">
-                <img src="{% static 'images/about/culture-mission.jpg' %}" alt="企业使命">
-                <div class="txt">
-                    <h2 class="h">企业使命</h2>
-                    <p class="p">让一个智能大脑，驱动万千机器人</p>
-                </div>
-            </article>
-        </div>
+      </div>
     </section>
 
-    <section class="ab2">
-        <div class="inner">
-            <h1 class="tit reveal" style="--delay: 60ms;">创始人寄语</h1>
-            <div class="quote-card reveal" style="--delay: 160ms;">
-                <div class="txt">
-                    <p class="reveal" style="--delay: 240ms;">真正有价值的机器人，不是孤立的单一设备，而是能够在不同场景、不同物理形态中持续复用与进化的智能能力。围绕“<span>一脑多体</span>”的核心理念，我们致力于打造统一的<span>具身智能大脑</span>，将感知、理解、决策与控制能力沉淀为可迁移、可复制的技术底座，让清洁机器人、轮足机器人及更多智能终端<span>共享同一套核心智能</span>，在城市服务、工业巡检、应急作业等复杂场景中高效协同。</p>
-                    <p class="reveal" style="--delay: 320ms;">未来，我们将持续深耕具身智能、自主导航、多模态感知与端侧决策等关键技术，推动机器人从“<span>单点功能</span>”走向“<span>通用能力</span>”，让智能真正走进更广阔的物理世界。</p>
-                </div>
-            </div>
+    <section class="people-intro" id="people">
+      <div class="people-intro__inner">
+        <div>
+          <span class="section-eyebrow">Founder Team</span>
+          <h2>我们来自不同背景，走向同一个目标。</h2>
         </div>
+        <p>
+          我们是一支来自学术、工程、机器人系统和产业商业化的一线团队。不同经历、视角和专业能力在这里被尊重，也被转化为面向真实场景的长期技术积累。
+        </p>
+      </div>
+    </section>
+
+    <section class="person-story">
+      <div class="person-story__inner">
+        <div
+          class="story-media asset-circuit-technical"
+          aria-label="科研与硬件技术场景占位图"
+        ></div>
+        <div class="person-copy">
+          <span class="person-copy__role">Founder · Chief Scientist</span>
+          <h2>许超</h2>
+          <div class="person-copy__title">浙江大学控制学院教授 / 博士生导师</div>
+          <p class="person-copy__text">负责公司核心技术方向与长期科研战略，从基础理论与原创算法出发，为长期技术壁垒提供持续支撑。</p>
+          <div class="person-tags"><span>具身智能</span><span>机器人自主控制</span><span>智能感知与决策</span></div>
+          <a class="meet-button" href="people/xu-chao.html">More <span class="meet-button__arrow">›</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="person-story person-story--reverse">
+      <div class="person-story__inner">
+        <div
+          class="story-media asset-engineering-industrial"
+          aria-label="工程化与机器人系统场景占位图"
+        ></div>
+        <div class="person-copy">
+          <span class="person-copy__role">Co-founder · Engineering Systems</span>
+          <h2>叶波</h2>
+          <div class="person-copy__title">L4 自动驾驶技术负责人 / 机器人系统工程化专家</div>
+          <p class="person-copy__text">负责技术工程化、机器人系统落地与规模化部署，将前沿算法转化为稳定、可靠、可规模复制的机器人产品。</p>
+          <div class="person-tags"><span>L4 自动驾驶</span><span>决策规划</span><span>规模化部署</span></div>
+          <a class="meet-button" href="people/ye-bo.html">More <span class="meet-button__arrow">›</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="person-story">
+      <div class="person-story__inner">
+        <div
+          class="story-media asset-robot-embodied"
+          aria-label="具身智能模型场景占位图"
+        ></div>
+        <div class="person-copy">
+          <span class="person-copy__role">VLA & Embodied Intelligence</span>
+          <h2>任志刚</h2>
+          <div class="person-copy__title">新一代具身智能模型研发负责人</div>
+          <p class="person-copy__text">聚焦 VLA 等新一代具身智能模型，为机器人构建从视觉理解、任务推理到动作决策的智能中枢。</p>
+          <div class="person-tags"><span>VLA</span><span>机器人智能决策</span><span>大模型算法</span></div>
+          <a class="meet-button" href="people/ren-zhigang.html">More <span class="meet-button__arrow">›</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="person-story person-story--reverse">
+      <div class="person-story__inner">
+        <div
+          class="story-media asset-robot-hardware-edge"
+          aria-label="端侧 AI 与边缘计算场景占位图"
+        ></div>
+        <div class="person-copy">
+          <span class="person-copy__role">Edge AI & Deployment</span>
+          <h2>方强</h2>
+          <div class="person-copy__title">端侧 AI、模型量化与机器人边缘计算负责人</div>
+          <p class="person-copy__text">负责端侧 AI、模型量化、机器人边缘计算与专业大模型部署，解决大模型进入真实机器人后的算力、时延、稳定性与成本问题。</p>
+          <div class="person-tags"><span>端侧 AI</span><span>模型量化</span><span>实时推理</span></div>
+          <a class="meet-button" href="people/fang-qiang.html">More <span class="meet-button__arrow">›</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="person-story">
+      <div class="person-story__inner">
+        <div
+          class="story-media asset-team-computing"
+          aria-label="多模态感知与空间智能场景占位图"
+        ></div>
+        <div class="person-copy">
+          <span class="person-copy__role">Perception & Spatial Intelligence</span>
+          <h2>陈鹏</h2>
+          <div class="person-copy__title">多模态感知、3D 环境理解与 SLAM 负责人</div>
+          <p class="person-copy__text">负责多模态感知、3D 环境理解、SLAM 与空间智能，构建机器人理解真实世界的“眼睛”。</p>
+          <div class="person-tags"><span>多模态感知</span><span>3D 理解</span><span>SLAM</span></div>
+          <a class="meet-button" href="people/chen-peng.html">More <span class="meet-button__arrow">›</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="person-story person-story--reverse">
+      <div class="person-story__inner">
+        <div
+          class="story-media asset-commercial-collaboration"
+          aria-label="商业化与产业合作场景占位图"
+        ></div>
+        <div class="person-copy">
+          <span class="person-copy__role">Product & Commercialization</span>
+          <h2>金昱哲</h2>
+          <div class="person-copy__title">产品战略、产业合作与运营管理负责人</div>
+          <p class="person-copy__text">负责产品战略、商业化、产业合作与运营管理，将技术能力转化为产品价值，推动公司走向规模化商业应用。</p>
+          <div class="person-tags"><span>产品战略</span><span>产业合作</span><span>商业化运营</span></div>
+          <a class="meet-button" href="people/jin-yuzhe.html">More <span class="meet-button__arrow">›</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing__inner">
+        <div class="closing__header">
+          <div>
+            <span class="section-eyebrow">Build for Reality</span>
+            <h2>从科研源头到产品现场，团队能力始终围绕真实落地展开。</h2>
+          </div>
+          <p>
+            Fortrix Robotics 将基础算法、机器人系统、端侧智能、感知能力与商业化路径放在同一个闭环中迭代，让技术不只停留在演示，而能进入持续运行的场景。
+          </p>
+        </div>
+      </div>
+      <div class="closing__gallery" aria-label="团队内容图像展示">
+        <div class="closing-card">
+          <div
+            class="closing-card__image asset-whiteboard-research"
+            aria-hidden="true"
+          ></div>
+          <div class="closing-card__content">
+            <span>Research</span>
+            <h3>把问题拆到可验证的科研路径。</h3>
+          </div>
+        </div>
+        <div class="closing-card">
+          <div
+            class="closing-card__image asset-engineering-industrial"
+            aria-hidden="true"
+          ></div>
+          <div class="closing-card__content">
+            <span>Engineering</span>
+            <h3>让系统经得住现场运行。</h3>
+          </div>
+        </div>
+        <div class="closing-card">
+          <div
+            class="closing-card__image asset-commercial-collaboration"
+            aria-hidden="true"
+          ></div>
+          <div class="closing-card__content">
+            <span>Delivery</span>
+            <h3>让技术成为客户可持续使用的产品。</h3>
+          </div>
+        </div>
+      </div>
     </section>
 </div>
 {% endblock %}

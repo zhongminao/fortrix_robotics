@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}任志刚 | Fortrix Robotics{% endblock %}
+
+{% block page_css %}
+<link rel="stylesheet" href="{% static 'css/about-detail.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="founder-detail-page">
+<section class="person-hero">
+      <div class="person-hero__inner">
+        <div class="person-hero__copy">
+          <p class="person-hero__eyebrow">VLA & Embodied Intelligence</p>
+          <h1>任志刚</h1>
+          <p class="person-hero__title">新一代具身智能模型研发负责人<br>视觉理解、任务推理与动作决策</p>
+          <p class="person-hero__summary">聚焦 VLA 等新一代具身智能模型，为机器人构建从视觉理解、任务推理到动作决策的智能中枢。</p>
+          <div class="person-data" aria-label="任志刚人物信息">
+            <div class="person-data__item"><span>Model</span><strong>VLA</strong></div>
+            <div class="person-data__item"><span>Focus</span><strong>视觉-语言-动作</strong></div>
+            <div class="person-data__item"><span>Outcome</span><strong>智能中枢</strong></div>
+          </div>
+        </div>
+        <div class="person-hero__visual">
+          <div class="person-avatar" aria-label="任志刚圆形头像占位"><span>任</span></div>
+          <p class="person-hero__caption">Embodied Intelligence / VLA Models</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile-story">
+      <div class="profile-story__inner">
+        <div class="profile-story__text">
+          <span class="section-eyebrow">Model Direction</span>
+          <h2>把视觉、语言和动作纳入同一条智能链路。</h2>
+          <p>任志刚推动 VLA 等关键模型方向，让机器人能够理解任务、理解环境，并将理解转化为可执行的动作决策。</p>
+        </div>
+        <div
+          class="profile-story__image asset-team-computing"
+          aria-label="智能模型研发辅助图"
+        ></div>
+      </div>
+    </section>
+
+    <section class="bio-section">
+      <div class="bio-section__inner">
+        <aside class="bio-aside">
+          <strong>Focus</strong>
+          VLA 模型<br>
+          具身智能<br>
+          任务推理<br>
+          动作决策
+        </aside>
+        <div class="bio-content">
+          <p class="bio-callout">让机器人理解任务、理解环境，并把理解转化为行动。</p>
+          <div class="bio-block">
+            <h2>模型能力建设</h2>
+            <p>任志刚聚焦新一代具身智能模型，把视觉、语言、动作等能力纳入统一的机器人智能链路中。</p>
+          </div>
+          <div class="bio-block">
+            <h2>在 Fortrix 的角色</h2>
+            <p>他负责推动 VLA 等关键模型方向，让机器人能够更好地完成视觉理解、任务推理与动作决策，为复杂场景执行提供智能基础。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="back-section">
+      <div class="back-section__inner">
+        <a class="back-link" href="../#people">← Back to founder team</a>
+      </div>
+    </section>
+</div>
+{% endblock %}
+

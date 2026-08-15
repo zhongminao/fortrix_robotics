@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}许超 | Fortrix Robotics{% endblock %}
+
+{% block page_css %}
+<link rel="stylesheet" href="{% static 'css/about-detail.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="founder-detail-page">
+<section class="person-hero">
+      <div class="person-hero__inner">
+        <div class="person-hero__copy">
+          <p class="person-hero__eyebrow">Science Engine</p>
+          <h1>许超</h1>
+          <p class="person-hero__title">Founder · Chief Scientist<br>浙江大学控制学院教授 / 博士生导师</p>
+          <p class="person-hero__summary">负责公司核心技术方向与长期科研战略，从基础理论与原创算法出发，为长期技术壁垒提供持续支撑。</p>
+          <div class="person-data" aria-label="许超人物信息">
+            <div class="person-data__item"><span>Academic</span><strong>浙江大学教授</strong></div>
+            <div class="person-data__item"><span>Focus</span><strong>具身智能</strong></div>
+            <div class="person-data__item"><span>Fortrix</span><strong>长期科研战略</strong></div>
+          </div>
+        </div>
+        <div class="person-hero__visual">
+          <div class="person-avatar" aria-label="许超圆形头像占位"><span>许</span></div>
+          <p class="person-hero__caption">Chief Scientist / Robotics Intelligence</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile-story">
+      <div class="profile-story__inner">
+        <div class="profile-story__text">
+          <span class="section-eyebrow">Research Direction</span>
+          <h2>从理论问题出发，沉淀机器人长期智能能力。</h2>
+          <p>围绕具身智能、机器人自主控制、无人系统协同、智能感知与决策等方向，许超将长期科研问题转化为公司技术路线中的关键支点。</p>
+        </div>
+        <div
+          class="profile-story__image asset-engineering-industrial"
+          aria-label="机器人科研与工程辅助图"
+        ></div>
+      </div>
+    </section>
+
+    <section class="bio-section">
+      <div class="bio-section__inner">
+        <aside class="bio-aside">
+          <strong>Focus</strong>
+          具身智能<br>
+          机器人自主控制<br>
+          无人系统协同<br>
+          智能感知与决策
+        </aside>
+        <div class="bio-content">
+          <p class="bio-callout">从基础理论与原创算法出发，为机器人长期智能能力建立源头。</p>
+          <div class="bio-block">
+            <h2>学术与技术创新引擎</h2>
+            <p>许超长期从事智能控制、机器人自主控制与智能系统研究，担任浙江大学控制学院教授、博士生导师，并负责公司核心技术方向与长期科研战略。</p>
+          </div>
+          <div class="bio-block">
+            <h2>在 Fortrix 的角色</h2>
+            <p>他从基础理论与原创算法出发，持续布局具身智能、机器人自主控制、无人系统协同、智能感知与决策等方向，为公司长期技术壁垒提供支撑。</p>
+          </div>
+          <div class="tag-row"><span>Science Robotics</span><span>Nature Machine Intelligence</span><span>智能控制</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="back-section">
+      <div class="back-section__inner">
+        <a class="back-link" href="../#people">← Back to founder team</a>
+      </div>
+    </section>
+</div>
+{% endblock %}
+

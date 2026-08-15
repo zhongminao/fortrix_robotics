@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}叶波 | Fortrix Robotics{% endblock %}
+
+{% block page_css %}
+<link rel="stylesheet" href="{% static 'css/about-detail.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="founder-detail-page">
+<section class="person-hero">
+      <div class="person-hero__inner">
+        <div class="person-hero__copy">
+          <p class="person-hero__eyebrow">Robotics Engineering</p>
+          <h1>叶波</h1>
+          <p class="person-hero__title">Co-founder · Engineering Systems<br>L4 自动驾驶技术负责人 / 机器人系统工程化专家</p>
+          <p class="person-hero__summary">负责技术工程化、机器人系统落地与规模化部署，将前沿算法转化为稳定、可靠、可规模复制的机器人产品。</p>
+          <div class="person-data" aria-label="叶波人物信息">
+            <div class="person-data__item"><span>Background</span><strong>L4 自动驾驶</strong></div>
+            <div class="person-data__item"><span>Focus</span><strong>系统工程化</strong></div>
+            <div class="person-data__item"><span>Outcome</span><strong>规模化部署</strong></div>
+          </div>
+        </div>
+        <div class="person-hero__visual">
+          <div class="person-avatar" aria-label="叶波圆形头像占位"><span>叶</span></div>
+          <p class="person-hero__caption">Engineering Systems / Deployment</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile-story">
+      <div class="profile-story__inner">
+        <div class="profile-story__text">
+          <span class="section-eyebrow">Engineering Direction</span>
+          <h2>把算法、系统和现场部署连接起来。</h2>
+          <p>叶波关注复杂机器人系统在真实环境中的可靠性、稳定性和可维护性，推动技术从原型验证走向可复制的产品化交付。</p>
+        </div>
+        <div
+          class="profile-story__image asset-robot-hardware-edge"
+          aria-label="机器人系统部署辅助图"
+        ></div>
+      </div>
+    </section>
+
+    <section class="bio-section">
+      <div class="bio-section__inner">
+        <aside class="bio-aside">
+          <strong>Focus</strong>
+          技术工程化<br>
+          决策规划<br>
+          机器人系统架构<br>
+          规模化部署
+        </aside>
+        <div class="bio-content">
+          <p class="bio-callout">真正有价值的机器人系统，必须能在复杂现场稳定运行。</p>
+          <div class="bio-block">
+            <h2>一线工程能力</h2>
+            <p>叶波长期参与自动驾驶与机器人系统的工程化建设，关注复杂系统在真实环境中的可靠性、稳定性和可维护性。</p>
+          </div>
+          <div class="bio-block">
+            <h2>在 Fortrix 的角色</h2>
+            <p>他负责将核心算法、机器人硬件、系统软件与现场部署流程连接起来，让技术从原型验证走向可复制的产品化交付。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="back-section">
+      <div class="back-section__inner">
+        <a class="back-link" href="../#people">← Back to founder team</a>
+      </div>
+    </section>
+</div>
+{% endblock %}
+
