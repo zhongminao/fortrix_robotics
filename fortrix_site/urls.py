@@ -18,6 +18,11 @@ urlpatterns = [
         name="product",     
     ),
     path(
+        "technology/",
+        TemplateView.as_view(template_name="technology/index.html"),
+        name="technology",
+    ),
+    path(
         "about/",
         TemplateView.as_view(template_name="about/index.html"),
         name="about",

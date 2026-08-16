@@ -1,10 +1,11 @@
 {% load static %}
 {% url 'home' as home_url %}
 {% url 'product' as product_url %}
+{% url 'technology' as technology_url %}
 {% url 'about' as about_url %}
 {% url 'join' as join_url %}
 
-<header class="site-header{% if request.path == home_url or request.path == about_url or request.path == join_url %} site-header--overlay{% endif %}" id="siteHeader">
+<header class="site-header{% if request.path == home_url or request.path == technology_url or request.path == about_url or request.path == join_url %} site-header--overlay{% endif %}" id="siteHeader">
     <div class="site-header__inner">
         <div class="site-header__logo" aria-label="Fortrix Robotics">
             <img
@@ -20,7 +21,7 @@
                 <span>产品矩阵</span>
                 <span class="site-header__chevron" aria-hidden="true"></span>
             </a>
-            <span class="site-header__item site-header__item--static">核心技术</span>
+            <a class="site-header__item" href="{{ technology_url }}">核心技术</a>
             <a class="site-header__item" href="{{ about_url }}">关于我们</a>
             <a class="site-header__item" href="{{ join_url }}">加入我们</a>
             <span class="site-header__item site-header__item--static">新闻资讯</span>

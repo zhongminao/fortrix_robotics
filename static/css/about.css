@@ -504,5 +504,5 @@
 body:has(.founder-team-page) .site-header__item,
 body:has(.founder-team-page) .site-header__item:hover,
 body:has(.founder-team-page) .site-header__item--static:hover {
-    color: rgba(255, 255, 255, 0.74);
+    color: rgba(255, 255, 255, 1);
 }

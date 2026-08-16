@@ -1,0 +1,430 @@
+﻿{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Fortrix Robotics | 核心技术{% endblock %}
+
+{% block page_css %}
+<link rel="stylesheet" href="{% static 'css/technology.css' %}">
+{% endblock %}
+
+{% block page_js %}
+<script src="https://unpkg.com/lucide@1.31.0/dist/umd/lucide.js"></script>
+<script src="{% static 'js/technology.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="technology-page" id="top">
+<section class="hero" aria-label="核心技术首屏">
+      <div class="hero__media" role="img" aria-label="机器人近景"></div>
+      <div class="hero__inner">
+        <div class="hero__layout">
+          <div class="hero__copy">
+            <p class="hero__eyebrow">Universal Embodied Intelligence</p>
+            <h1 class="hero__title">
+              一脑多体
+              <span>跨本体迁移的机器人智能底座</span>
+            </h1>
+          </div>
+        </div>
+
+        <div class="hero__meta" aria-label="技术关键词">
+          <span><strong>Perceive</strong>多模态感知</span>
+          <span><strong>Reason</strong>场景理解与推理</span>
+          <span><strong>Act</strong>动作生成与控制</span>
+          <span><strong>Learn</strong>数据飞轮持续进化</span>
+        </div>
+      </div>
+      <a class="photo-credit" href="https://unsplash.com/photos/a-humanoid-robot-with-a-blue-lanyard-on-Sw_8vfLF6_g" target="_blank" rel="noreferrer">Photo from Unsplash</a>
+    </section>
+
+    <section class="section" id="concept">
+      <div class="shell">
+        <div class="section__head reveal">
+          <div>
+            <span class="section__kicker">01 / Core Concept</span>
+            <h2 class="section__title">把“大脑”与“身体”解耦，让智能能力可以复用。</h2>
+          </div>
+          <p class="section__intro">
+            机器人要进入更多场景，不能依赖一次性定制算法。Fortrix 将通用大脑、本体安全边界和专属动作理解拆开，让同一套智能能力可以在清洁、巡检、服务等不同身体之间迁移。
+          </p>
+        </div>
+
+        <div class="concept-feature reveal">
+          <div class="concept-story">
+            <span class="concept-story__kicker">One Brain / Many Bodies</span>
+            <p class="concept-story__lead">
+              Fortrix 将共性的场景理解、任务规划、风险判断与动作生成沉淀在统一智能底座中，再通过边缘侧本体适配，把能力迁移到清洁车、机械臂、无人机和服务机器人。
+            </p>
+
+            <div class="concept-list" aria-label="一脑多体核心拆解">
+              <div class="concept-list__item">
+                <span class="concept-list__num">01</span>
+                <div>
+                  <strong>共享规划大脑</strong>
+                  <span>统一处理目标、任务、场景和风险，让不同机器人具备一致的环境理解能力。</span>
+                </div>
+              </div>
+              <div class="concept-list__item">
+                <span class="concept-list__num">02</span>
+                <div>
+                  <strong>底层安全边界</strong>
+                  <span>将速度、转向、载荷、避障和急停等硬件限制纳入模型约束。</span>
+                </div>
+              </div>
+              <div class="concept-list__item">
+                <span class="concept-list__num">03</span>
+                <div>
+                  <strong>专属动作理解</strong>
+                  <span>针对清扫、巡检、搬运和服务任务，学习每种身体的动作语义。</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="concept-visual" aria-label="通用大脑与多本体连接示意">
+            <div class="concept-visual__frame" aria-hidden="true"></div>
+            <div class="body-map">
+              <svg class="body-links" viewBox="0 0 1000 620" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M165 145 C310 160 380 210 500 310"></path>
+                <path d="M145 315 C300 300 390 305 500 310"></path>
+                <path d="M175 475 C315 448 390 370 500 310"></path>
+                <path d="M500 310 C620 210 710 160 835 135"></path>
+                <path d="M500 310 C630 305 720 305 858 315"></path>
+                <path d="M500 310 C615 390 705 455 828 475"></path>
+              </svg>
+
+              <div class="body-node body-node--car-left">
+                <i data-lucide="car" aria-hidden="true"></i>
+                <span class="body-node__label">CAR</span>
+              </div>
+              <div class="body-node body-node--bot">
+                <i data-lucide="bot" aria-hidden="true"></i>
+                <span class="body-node__label">BOT</span>
+              </div>
+              <div class="body-node body-node--hum">
+                <i data-lucide="user" aria-hidden="true"></i>
+                <span class="body-node__label">HUM</span>
+              </div>
+              <div class="body-node body-node--uav">
+                <i data-lucide="drone" aria-hidden="true"></i>
+                <span class="body-node__label">UAV</span>
+              </div>
+              <div class="body-node body-node--arm">
+                <i data-lucide="factory" aria-hidden="true"></i>
+                <span class="body-node__label">ARM</span>
+              </div>
+              <div class="body-node body-node--car-right">
+                <i data-lucide="car" aria-hidden="true"></i>
+                <span class="body-node__label">CAR</span>
+              </div>
+              <div class="brain-caption">通用大脑</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="architecture">
+      <div class="shell">
+        <div class="section__head reveal">
+          <div>
+            <span class="section__kicker">02 / Technology Architecture</span>
+            <h2 class="section__title">MoT 主干与三大生成器，构成统一的具身智能管线。</h2>
+          </div>
+          <p class="section__intro">
+            原始架构图中的信息被拆成更适合网页阅读的层级：多模态输入进入 MoT 主干，推理器、世界生成器和动作生成器分别完成理解、预测与执行。
+          </p>
+        </div>
+
+        <div class="architecture-panel reveal">
+          <div class="architecture-panel__bar">
+            <span>Universal Embodied Intelligence Model</span>
+            <span>Perception → Reasoning → World Prediction → Action</span>
+          </div>
+          <div class="tech-map">
+            <svg class="tech-map__lines" viewBox="0 0 1000 560" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M166 142 V218"></path>
+              <path d="M500 142 V218"></path>
+              <path d="M834 142 V218"></path>
+              <path d="M166 218 C260 250 335 252 426 280"></path>
+              <path d="M500 218 V280"></path>
+              <path d="M834 218 C735 252 660 252 574 280"></path>
+              <path d="M102 452 V352"></path>
+              <path d="M301 452 V352"></path>
+              <path d="M500 452 V352"></path>
+              <path d="M699 452 V352"></path>
+              <path d="M898 452 V352"></path>
+              <path d="M102 352 H898"></path>
+              <path d="M500 352 V318"></path>
+            </svg>
+
+            <div class="tech-map__content">
+              <div class="tech-map__modules" aria-label="三大生成器">
+                <article class="tech-module tech-module--reason">
+                  <div class="tech-module__head">
+                    <i data-lucide="network" aria-hidden="true"></i>
+                    <h3>推理器</h3>
+                  </div>
+                  <p>分析 · 目标 · 场景 Token</p>
+                </article>
+
+                <article class="tech-module tech-module--world">
+                  <div class="tech-module__head">
+                    <i data-lucide="globe" aria-hidden="true"></i>
+                    <h3>世界生成器</h3>
+                  </div>
+                  <p>预测 · 网格 · 风险评估</p>
+                </article>
+
+                <article class="tech-module tech-module--action">
+                  <div class="tech-module__head">
+                    <i data-lucide="factory" aria-hidden="true"></i>
+                    <h3>动作生成器</h3>
+                  </div>
+                  <p>意图 · 移动 · Action Chunk</p>
+                </article>
+              </div>
+
+              <div class="mot-spine" aria-label="MoT 主干">
+                <div class="mot-lock">
+                  <i data-lucide="lock" aria-hidden="true"></i>
+                </div>
+                <div class="mot-spine__main">
+                  <strong>MoT 主干</strong>
+                  <span>多模态统一编码</span>
+                </div>
+                <div class="mot-lock">
+                  <i data-lucide="lock" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <div class="token-row" aria-label="多模态输入">
+                <div class="token-card">
+                  <i data-lucide="languages" aria-hidden="true"></i>
+                  语言
+                </div>
+                <div class="token-card">
+                  <i data-lucide="eye" aria-hidden="true"></i>
+                  视觉
+                </div>
+                <div class="token-card">
+                  <i data-lucide="activity" aria-hidden="true"></i>
+                  本体状态
+                </div>
+                <div class="token-card">
+                  <i data-lucide="map" aria-hidden="true"></i>
+                  地图信息
+                </div>
+                <div class="token-card">
+                  <i data-lucide="files" aria-hidden="true"></i>
+                  现场数据
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stack-section">
+      <div class="shell">
+        <div class="section__head reveal">
+          <div>
+            <span class="section__kicker">03 / Capability Stack</span>
+            <h2 class="section__title">模型落地</h2>
+          </div>
+        </div>
+
+        <div class="stack-flow reveal" aria-label="能力落地模块链路">
+          <article class="stack-card stack-card--perception">
+            <div class="stack-card__media" aria-hidden="true"></div>
+            <div class="stack-card__node">01</div>
+            <div class="stack-card__content">
+              <span>Perception</span>
+              <h3>多模态感知</h3>
+              <p>采集视觉、语音、雷达、本体状态和任务日志。</p>
+            </div>
+          </article>
+
+          <article class="stack-card stack-card--fusion">
+            <div class="stack-card__media" aria-hidden="true"></div>
+            <div class="stack-card__node">02</div>
+            <div class="stack-card__content">
+              <span>Fusion</span>
+              <h3>数据融合</h3>
+              <p>把跨设备、跨场景数据对齐到统一语义空间。</p>
+            </div>
+          </article>
+
+          <article class="stack-card stack-card--simulation">
+            <div class="stack-card__media" aria-hidden="true"></div>
+            <div class="stack-card__node">03</div>
+            <div class="stack-card__content">
+              <span>Validation</span>
+              <h3>仿真验证</h3>
+              <p>在仿真与实测中验证策略、安全阈值和任务完成率。</p>
+            </div>
+          </article>
+
+          <article class="stack-card stack-card--edge">
+            <div class="stack-card__media" aria-hidden="true"></div>
+            <div class="stack-card__node">04</div>
+            <div class="stack-card__content">
+              <span>Edge Deployment</span>
+              <h3>端侧部署</h3>
+              <p>将模型能力部署到机器人端侧，保证低延迟和稳定执行。</p>
+            </div>
+          </article>
+
+          <article class="stack-card stack-card--learning">
+            <div class="stack-card__media" aria-hidden="true"></div>
+            <div class="stack-card__node">05</div>
+            <div class="stack-card__content">
+              <span>Online Learning</span>
+              <h3>持续学习</h3>
+              <p>把异常样本与现场反馈回流训练，持续优化模型能力。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="shell">
+        <div class="section__head reveal">
+          <div>
+            <span class="section__kicker">04 / Deployment Process</span>
+            <h2 class="section__title">新设备快速接入，从统一建模到在线优化。</h2>
+          </div>
+          <p class="section__intro">
+            页面不再用一条发光时间线塞满信息，而是将接入流程整理成可阅读的部署闭环，方便客户理解上线前后发生什么。
+          </p>
+        </div>
+
+        <div class="process reveal">
+          <article class="process-step">
+            <span>01</span>
+            <h3>设备接入</h3>
+            <p>统一建模机器人本体、传感器、控制接口和运行边界。</p>
+          </article>
+          <article class="process-step">
+            <span>02</span>
+            <h3>动态配置</h3>
+            <p>根据场景目标调用策略模板，配置路线、任务和安全阈值。</p>
+          </article>
+          <article class="process-step">
+            <span>03</span>
+            <h3>功能验证</h3>
+            <p>通过仿真与实测验证避障、定位、路径和任务完成率。</p>
+          </article>
+          <article class="process-step">
+            <span>04</span>
+            <h3>任务适配</h3>
+            <p>针对现场规则、人车流和作业节奏进行场景学习。</p>
+          </article>
+          <article class="process-step">
+            <span>05</span>
+            <h3>持续优化</h3>
+            <p>上线后回流数据，在线更新策略并复制到更多区域。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="flywheel">
+      <div class="shell">
+        <div class="section__head reveal">
+          <div>
+            <span class="section__kicker">05 / Data Flywheel</span>
+            <h2 class="section__title">每一次作业，都会让通用智能底座更稳定。</h2>
+          </div>
+          <p class="section__intro">
+            数据飞轮连接多种机器人身体和真实任务，通过采集、融合、训练、验证、部署、回流，形成持续进化的闭环。
+          </p>
+        </div>
+
+        <div class="flywheel-layout reveal">
+          <div class="flywheel-visual" aria-label="数据飞轮示意">
+            <div class="wheel">
+              <span class="wheel__label wheel__label--car">CAR</span>
+              <span class="wheel__label wheel__label--uav">UAV</span>
+              <span class="wheel__label wheel__label--hum">HUM</span>
+              <span class="wheel__label wheel__label--arm">ARM</span>
+              <div class="wheel__center">VLA<br>通用智能体</div>
+            </div>
+          </div>
+
+          <div class="flywheel-notes">
+            <article class="flywheel-note">
+              <div class="flywheel-note__num">01</div>
+              <div>
+                <h3>真实作业数据</h3>
+                <p>车辆、机械臂、无人机和服务机器人持续产生多模态样本，覆盖更多边界情况。</p>
+              </div>
+            </article>
+            <article class="flywheel-note">
+              <div class="flywheel-note__num">02</div>
+              <div>
+                <h3>仿真与实测对齐</h3>
+                <p>在仿真环境中快速验证策略，再用真实现场数据校准风险和动作参数。</p>
+              </div>
+            </article>
+            <article class="flywheel-note">
+              <div class="flywheel-note__num">03</div>
+              <div>
+                <h3>在线学习更新</h3>
+                <p>将异常路况、高价值任务和用户反馈回流模型，持续提高泛化能力和安全性。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="applications">
+      <div class="shell">
+        <div class="section__head reveal">
+          <div>
+            <span class="section__kicker">06 / Industry Application</span>
+            <h2 class="section__title">先落在高频、重复、环境复杂的真实空间。</h2>
+          </div>
+          <p class="section__intro">
+            一脑多体不是概念展示，而是从可验证场景开始扩展，让模型能力和产品交付同步成长。
+          </p>
+        </div>
+
+        <div class="stack-flow stack-flow--plain reveal" aria-label="行业应用模块">
+          <article class="stack-card stack-card--manufacturing">
+            <div class="stack-card__media" aria-hidden="true"></div>
+            <div class="stack-card__node">01</div>
+            <div class="stack-card__content">
+              <span>Industrial</span>
+              <h3>工业制造</h3>
+              <p>面向园区厂区、物流园和生产环境，支持清洁、巡检、搬运等高频任务。</p>
+            </div>
+          </article>
+
+          <article class="stack-card stack-card--home-service">
+            <div class="stack-card__media" aria-hidden="true"></div>
+            <div class="stack-card__node">02</div>
+            <div class="stack-card__content">
+              <span>Home Service</span>
+              <h3>家庭服务</h3>
+              <p>将视觉理解、任务分解和动作执行迁移到更多服务型身体。</p>
+            </div>
+          </article>
+
+          <article class="stack-card stack-card--commercial">
+            <div class="stack-card__media" aria-hidden="true"></div>
+            <div class="stack-card__node">03</div>
+            <div class="stack-card__content">
+              <span>Commercial</span>
+              <h3>商业服务</h3>
+              <p>在商业街区、景区、校园和公共设施中实现标准化、可复制的机器人服务。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+</div>
+{% endblock %}

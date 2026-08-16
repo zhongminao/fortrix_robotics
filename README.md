@@ -27,6 +27,25 @@ python manage.py migrate
 python manage.py runserver 0.0.0.0:8000
 ```
 
+## 临时 cpolar 访问保护
+
+临时把端口暴露到公网时，可以开启一层 HTTP Basic Auth 外壳。它不改页面内容，默认关闭，只在设置环境变量时启用。
+
+```bash
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate py313
+export FORTRIX_BASIC_AUTH_ENABLED=true
+export FORTRIX_BASIC_AUTH_USERNAME=fortrix
+export FORTRIX_BASIC_AUTH_PASSWORD='change-this-password'
+python manage.py runserver 0.0.0.0:8000
+```
+
+关闭保护时，去掉这些 `FORTRIX_BASIC_AUTH_*` 环境变量，或设置：
+
+```bash
+export FORTRIX_BASIC_AUTH_ENABLED=false
+```
+
 启动后访问：
 
 - `http://127.0.0.1:8000/`
@@ -167,4 +186,3 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate py313
 python manage.py check
 ```
-

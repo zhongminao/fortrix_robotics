@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 # {% extends %}、{% block %}、{% include %} 是 Django 模板语法
@@ -25,6 +26,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "fortrix_site.basic_auth.BasicAuthMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -73,4 +75,14 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [BASE_DIR / "static"]
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+BASIC_AUTH_ENABLED = os.getenv("FORTRIX_BASIC_AUTH_ENABLED", "false").lower() in [
+    "1",
+    "true",
+    "yes",
+    "on",
+]
+BASIC_AUTH_USERNAME = os.getenv("FORTRIX_BASIC_AUTH_USERNAME", "fortrix")
+BASIC_AUTH_PASSWORD = os.getenv("FORTRIX_BASIC_AUTH_PASSWORD", "")
+BASIC_AUTH_REALM = os.getenv("FORTRIX_BASIC_AUTH_REALM", "Fortrix Preview")
 

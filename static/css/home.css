@@ -169,24 +169,24 @@
         box-shadow 0.2s ease;
 }
 
-.hero__button--primary {
+.hero__button--product {
     background: #0f172a;
     box-shadow: 0 10px 15px rgba(15, 23, 42, 0.1);
     color: #ffffff;
 }
 
-.hero__button--primary:hover {
+.hero__button--product:hover {
     background: #1f2937;
 }
 
-.hero__button--secondary {
+.hero__button--technology {
     border: 1px solid #d1d5db;
     background: #ffffff;
     box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
     color: #0f172a;
 }
 
-.hero__button--secondary:hover {
+.hero__button--technology:hover {
     border-color: #0891b2;
     color: #0891b2;
 }

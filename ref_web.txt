@@ -7,12 +7,15 @@ https://diffrobot.com/
 星程智能
 https://starjourneyai.com/index.html
 
-团队介绍
-https://wayve.ai/careers/people/
+
+https://wayve.ai/careers/people/  团队介绍
+https://wayve.ai/technology/      核心技术
 
 普渡机器人
 https://www.pudutech.com/zh-CN
 https://www.pudutech.com/zh-CN/news/pudu-foundation-model-pudufm-1-0（核心技术布局）
+
+
 
 仙途智能（核心技术布局）
 https://autowise.ai/technology/
