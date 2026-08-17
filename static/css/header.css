@@ -217,6 +217,17 @@
     content: "";
 }
 
+.product-menu__media--primary {
+    background:
+        url('/static/images/product/machine_side.png') center / contain no-repeat,
+        radial-gradient(circle at 50% 45%, rgba(31, 151, 118, 0.14), transparent 62%),
+        linear-gradient(135deg, #eef4f2, #f8fafc);
+}
+
+.product-menu__media--primary::before {
+    display: none;
+}
+
 .product-menu__media--secondary {
     background:
         radial-gradient(circle at 50% 42%, rgba(49, 117, 210, 0.16), transparent 55%),

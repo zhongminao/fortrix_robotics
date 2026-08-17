@@ -36,36 +36,6 @@ urlpatterns = [
         name="about_photo_log",
     ),
     path(
-        "about/people/xu-chao.html",
-        TemplateView.as_view(template_name="about/people/xu-chao.html"),
-        name="founder_xu_chao",
-    ),
-    path(
-        "about/people/ye-bo.html",
-        TemplateView.as_view(template_name="about/people/ye-bo.html"),
-        name="founder_ye_bo",
-    ),
-    path(
-        "about/people/ren-zhigang.html",
-        TemplateView.as_view(template_name="about/people/ren-zhigang.html"),
-        name="founder_ren_zhigang",
-    ),
-    path(
-        "about/people/fang-qiang.html",
-        TemplateView.as_view(template_name="about/people/fang-qiang.html"),
-        name="founder_fang_qiang",
-    ),
-    path(
-        "about/people/chen-peng.html",
-        TemplateView.as_view(template_name="about/people/chen-peng.html"),
-        name="founder_chen_peng",
-    ),
-    path(
-        "about/people/jin-yuzhe.html",
-        TemplateView.as_view(template_name="about/people/jin-yuzhe.html"),
-        name="founder_jin_yuzhe",
-    ),
-    path(
         "join/",
         TemplateView.as_view(template_name="join/index.html"),
         name="join",
